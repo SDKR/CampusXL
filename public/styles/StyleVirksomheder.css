@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"
+}
+
+.slider{
+	text-align: center;
+	width: 93%;
+	padding-left: 3%;
+ 	padding-right: 3%;
+/*	box-shadow: inset 0px 0px 250px rgba(0,0,0,0.9);*/
+	box-shadow: inset 0 5px 5px 0px grey;
+	position: relative;
+	background-image: url(Images/funky-lines.png);
+	background-color: #E8E8E8;
+	h1 { padding-bottom: 15px }
+
+	p { color: #333; font-family: 'Muli', sans-serif; margin-bottom: 15px; }
+	
+
+}
+	h4{
+		margin-top: 0;
+		margin-bottom: 0;
+		line-height: 20px;
+	}
+
+.contentarea{
+	box-shadow: inset 0 10px 5px -6px gray;
+	box-shadow: inset 1px 1px 3px #999;
+	width: 100%;
+	height: 5px;
+}
+
+/* //standard settings */
+.contentbox{
+	position: relative;
+	width: 39%;
+	height: 25%;
+	margin: 1%;
+/*	margin-bottom: 2%;*/
+	background-color: #c0c0c0;
+	float:left;
+	text-align: center;
+	border-radius: 8px;
+	/* overflow:hidden; */
+	/* word-wrap: break-word; */
+	/* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+	padding: 3%;
+}
+
+.contentbox h2 {
+	line-height: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: left;
+	font-size: 28px;
+}
+
+.contentbox p {
+	line-height: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: left;
+	font-size: 28px;
+}
+
+.contentbox img{
+	width: 100%;
+	border-top-right-radius: 8px; 
+	border-top-left-radius: 8px; 
+}
+
+.readMore{
+	position: absolute;
+    bottom: 1.4%;
+    left: 0px;
+    background: #e74c3c;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+	border-top-right-radius: 10px; 
+}
+
+.readMore:hover{
+	cursor: pointer;
+	box-shadow: 0 0 0.25rem crimson;
+}
+
+.counter{
+	position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #e74c3c;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+	border-radius: 50%; 
+}
+
+.center{
+	position: relative;
+}
+
+#bot{
+	margin-bottom: 3%;
+}
+
+.footer{
+
+	
+}

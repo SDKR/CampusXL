@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+	<!-- Revmove browser bars in android and IOS  -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+<meta charset="utf-8">
+<title>Fuel</title>
+
+<link href="styles/UddannelseSide.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+		<!--	Header		-->
+		<header>
+				<div>
+						<button class="btn btn-primary" onclick="location.href='/index.html'" type="button">Tilbage</button>
+					</div>
+					<div>
+						<h1>Uddannelser</h1>
+					</div>
+				<img id="headerImage" src="images/Logo2.png">
+<!--
+				<div class="burgermenu">
+					<a href="javascript:void(0);" class="icon" onclick="ShowMenu()">&#9776; Menu</a>
+				</div>
+	-->			
+				<!--	dropdown		-->
+				<div class="dropdown">
+					<button onclick="ShowMenu()" class="dropbtn">Find Kategori</button>
+					  <div id="myDropdown" class="dropdown-content">
+						<a href="#noget1">Kategori1</a>
+						<a href="#noget2">Kategori2</a>
+						<a href="#noget3">Kategori3</a>
+					  </div>
+				</div>
+			</header>
+ <!--	Content		-->
+<main class="flex-main">
+
+	<!--
+	<button class="Kategoriknap" onclick="ShowKategori1()">It Uddannelser</button>
+	<div id="Kategori1">
+		<table class="demo">
+			<tr>
+				<th id="noget1">Uddannelsen</th>
+				<th id="noget2">Hvor Henne</th>
+				<th id="noget3">Læs Mere</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>&nbsp;<p>Data Science</p></td>
+				<td>&nbsp;<p>København<br>
+							 Lyngby<br>
+							 Rødovre</p></td>
+				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 1</a></td>
+			</tr>
+			<tr>
+					<td>&nbsp;<p>IT noget</p></td>
+				<td>&nbsp;<p>
+					By1<br>
+					By2<br>
+					By3<br>
+					By4<br>
+					By5<br>
+					By6</p></td>
+				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 2</a></td>
+			</tr>
+			<tr>
+				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 28</a></td>
+				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 28</a></td>
+				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 3</a></td>
+			</tr>
+			<tr>
+				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 28</a></td>
+				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 28</a></td>
+				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 4</a></td>
+			</tr>
+			<tr>
+				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 28</a></td>
+				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 28</a></td>
+				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 5</a></td>
+			</tr>
+			<tbody>
+		</table>
+	</div>
+-->
+
+	  <div class="cd-schedule loading">
+			<div class="timeline">
+				<ul>
+					<li><span>09:00</span></li>
+					<li><span>09:30</span></li>
+					<li><span>10:00</span></li>
+					<li><span>10:30</span></li>
+					<li><span>11:00</span></li>
+					<li><span>11:30</span></li>
+					<li><span>12:00</span></li>
+					<li><span>12:30</span></li>
+					<li><span>13:00</span></li>
+					<li><span>13:30</span></li>
+					<li><span>14:00</span></li>
+					<li><span>14:30</span></li>
+					<li><span>15:00</span></li>
+					<li><span>15:30</span></li>
+					<li><span>16:00</span></li>
+					<li><span>16:30</span></li>
+					<li><span>17:00</span></li>
+					<li><span>17:30</span></li>
+					<li><span>18:00</span></li>
+				</ul>
+			</div> <!-- .timeline -->
+		
+			<div class="events">
+				<ul>
+					<li class="events-group">
+						
+						<div class="top-info" ><div class="arrow" id="arrowturn1"></div>&nbsp;<span>IT</span></div>
+						<ul id="Slideshow1">
+							<li class="single-event" data-content="event-abs-circuit" data-event="event-1">
+								<a href="#0">
+									<em class="event-name">Programør</em>
+								</a>
+							</li>
+		
+							<li class="single-event" data-start="11:00" data-end="12:30" data-content="event-rowing-workout" data-event="event-2">
+								<a href="#0">
+									<em class="event-name">IT-Support</em>
+								</a>
+							</li>
+		
+							<li class="single-event" data-start="14:00" data-end="15:15"  data-content="event-yoga-1" data-event="event-3">
+								<a href="#0">
+									<em class="event-name">uddannelse</em>
+								</a>
+							</li>
+						</ul>
+					</li>
+		
+					<li class="events-group">
+						<div class="top-info"><span>Tuesday</span></div>
+		
+						<ul>
+							<li class="single-event" data-start="10:00" data-end="11:00"  data-content="event-rowing-workout" data-event="event-2">
+								<a href="#0">
+									<em class="event-name">Rowing Workout</em>
+								</a>
+							</li>
+		
+							<li class="single-event" data-start="11:30" data-end="13:00"  data-content="event-restorative-yoga" data-event="event-4">
+								<a href="#0">
+									<em class="event-name">Restorative Yoga</em>
+								</a>
+							</li>
+		
+							<li class="single-event" data-start="13:30" data-end="15:00" data-content="event-abs-circuit" data-event="event-1">
+								<a href="#0">
+									<em class="event-name">Abs Circuit</em>
+								</a>
+							</li>
+		
+							<li class="single-event" data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-3">
+								<a href="#0">
+									<em class="event-name">Yoga Level 1</em>
+								</a>
+							</li>
+						</ul>
+					</li>
+		
+					<li class="events-group">
+						<div class="top-info"><span>Wednesday</span></div>
+		
+						<ul>
+							<li class="single-event" data-start="09:00" data-end="10:15" data-content="event-restorative-yoga" data-event="event-4">
+								<a href="#0">
+									<em class="event-name">Restorative Yoga</em>
+								</a>
+							</li>
+		
+							<li class="single-event" data-start="10:45" data-end="11:45" data-content="event-yoga-1" data-event="event-3">
+								<a href="#0">
+									<em class="event-name">Yoga Level 1</em>
+								</a>
+							</li>
+		
+							<li class="single-event" data-start="12:00" data-end="13:45"  data-content="event-rowing-workout" data-event="event-2">
+								<a href="#0">
+									<em class="event-name">Rowing Workout</em>
+								</a>
+							</li>
+		
+							<li class="single-event" data-start="13:45" data-end="15:00" data-content="event-yoga-1" data-event="event-3">
+								<a href="#0">
+									<em class="event-name">Yoga Level 1</em>
+								</a>
+							</li>
+						</ul>
+					</li>
+		
+					<li class="events-group">
+						<div class="top-info"><span>Thursday</span></div>
+		
+						<ul>
+							<li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
+								<a href="#0">
+									<em class="event-name">Abs Circuit</em>
+								</a>
+							</li>
+		
+							<li class="single-event" data-start="12:00" data-end="13:45" data-content="event-restorative-yoga" data-event="event-4">
+								<a href="#0">
+									<em class="event-name">Restorative Yoga</em>
+								</a>
+							</li>
+		
+							<li class="single-event" data-start="15:30" data-end="16:30" data-content="event-abs-circuit" data-event="event-1">
+								<a href="#0">
+									<em class="event-name">Abs Circuit</em>
+								</a>
+							</li>
+		
+							<li class="single-event" data-start="17:00" data-end="18:30"  data-content="event-rowing-workout" data-event="event-2">
+								<a href="#0">
+									<em class="event-name">Rowing Workout</em>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		
+			<div class="event-modal">
+				<header class="header">
+					<div class="content">
+						<span class="event-date"></span>
+						<h3 class="event-name"></h3>
+					</div>
+		
+					<div class="header-bg"></div>
+				</header>
+		
+				<div class="body">
+					<div class="event-info"></div>
+					<div class="body-bg"></div>
+				</div>
+		
+				<a href="#0" class="close">Close</a>
+			</div>
+		
+			<div class="cover-layer"></div>
+		</div> <!-- .cd-schedule -->
+</div>    
+</main>
+
+	<script src="modernizr.js"></script>
+
+    	<!--	Javascript import	-->
+		<script src="UddannelseSide.js"> </script>
+</body>
+</html>

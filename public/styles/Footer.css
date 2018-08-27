@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+
+#footer .navbar-inverse{
+	background-image: linear-gradient(to bottom,#0B9BE2 0,rgb(9, 123, 180) 100%);
+}
+
+#bottomNav {
+	padding:8px 0 17px 0;
+	box-shadow: inset 0 0.5px 0.5px 0px white;
+}
+#bottomNav a {
+    font-size:17pt;
+    color:#ddd;
+    text-decoration:none;
+}
+#bottomNav a:hover {
+    color:#fff;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+    height: 70px;
+    background-color: #E8E8E8;
+  }
+  #footer div:nth-of-type(1){
+      height: 70px;
+  }
+  #footer i{
+      font-size: 16pt;
+  }
+  #footer .col-xs-2 a{
+      font-size: 10pt;
+  }
+  
+  #footer .col-xs-2 {
+      width: 20%; 
+      padding-left: 0%;
+      padding-right: 0%;
+  }
+
+@media only screen and (max-width: 380px) {
+
+	#footer .col-xs-2 a{
+		font-size: 8pt;
+	}
+
+	#footer i{
+		font-size: 14pt;
+	}
+
+}

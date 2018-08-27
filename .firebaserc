@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "template-progressive-web-app",
+    "fuel": "fuel-pwa-783be"
+  }
+}
