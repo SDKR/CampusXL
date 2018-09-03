@@ -22,7 +22,7 @@
     <!-- Revmove browser bars in android and IOS  -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="FUEL">
+    <meta name="apple-mobile-web-app-title" content="Campus XL">
     <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <!-- android -->
@@ -49,75 +49,82 @@
     <meta name="theme-color" content="#ffffff">
 
 
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="/manifest.json">
 
     <meta charset="utf-8">
-    <title>Fuel</title>
+    <title>Campus XL</title>
     <link href="styles/QuizSide.css" rel="stylesheet" type="text/css">
     <link href="styles/Footer.css" rel="stylesheet" type="text/css">
     <link href="styles/Header.css" rel="stylesheet" type="text/css">
-    
+
 
     <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/> -->
 
-    
+
 
 </head>
 
 <body>
-    <!--	Header		-->
-    <header>
-        <img id="headerImage" src="images/Logo2.png" <!-- burgermenu -->
+    <!--	Header	style="left: -110%;"	-->
+    <header >
+        <img id="headerImage" src="images/Logo.png" <!-- burgermenu -->
     </header>
-
-    <div class="indhold" style="position: absolute;">
-
-        <div>
-            <br>
-			<h1 id="Headline">Velkommen til CampusXL</h1>
-			<a href="#" class="shiny-btn">Call to action</a>
-			<a href="#" class="shiny-btn">Call to action</a>
+    <!-- <iframe src="https://www.surveymonkey.com/r/7VG3DF7"></iframe> -->
+    <div class="indhold">
+        
+        <div id="quiz" style="display: none;">
+                <!-- <script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd_2Bnex51b1b2jCZWBQtfTcaOFVPvXnNc2x8FiLPlKDEDg.js"].join(""),a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script> -->
+            
+               
         </div>
-
+        <div id="buttons">
+            <h1 id="Headline">Vælg din Quiztype</h1>
+            <a href="#" class="shiny-btn grundskole">grundskole</a>
+           <a href="#" class="shiny-btn campus">campus</a>
+        </div>
     </div>
-
-    <div id="footer">
-        <div class="col-xs-12 navbar-inverse navbar-fixed-bottom">
+    
+        <div id="footer" class="col-xs-12 navbar-inverse navbar-fixed-bottom">
             <div class="row" id="bottomNav">
                 <div class="col-xs-2 text-center">
-                    <a href="index.html">
+                    <a id="forside" href="index.html">
                         <i class="glyphicon glyphicon-home"></i>
                         <br>Forside</a>
                 </div>
                 <div class="col-xs-2 text-center">
-                    <a href="#">
+                    <a id="virksomheder" href="Virksomhedsside.html">
                         <i class="glyphicon glyphicon-briefcase"></i>
                         <br>Virksomheder</a>
                 </div>
                 <div class="col-xs-2 text-center">
-                        <a href="calendar.html">
+                        <a id="calender" href="calendar.html">
                             <i class="glyphicon glyphicon-list"></i>
-                            <br>Tidsplan</a>
+                            <br>Program</a>
                 </div>
                 <div class="col-xs-2 text-center">
-                    <a href="UddannelseSide.html">
+                    <a id="uddannelse" href="UddannelseSide.html">
                         <i class="glyphicon glyphicon-education"></i>
                         <br>Uddannelser</a>
                 </div>
                 <div class="col-xs-2 text-center">
-                    <a href="QuizSide.html">
+                    <a id="quiz" class="aktiv" href="QuizSide.html">
                         <i class="glyphicon glyphicon-check"></i>
                         <br>Quiz</a>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="modernizr.js"></script>
-
-
+    <!-- <script src="modernizr.js"></script> -->
+    
     <!--	Javascript import	-->
-    <script src="QuizSide.js">
+    <script src="scripts/QuizSide.js">
     </script>
+    <script>
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker
+                   .register('/sw.js')
+                   .then(function() { console.log("Service Worker Registered"); });
+        }
+        </script>
 </body>
 
 </html>

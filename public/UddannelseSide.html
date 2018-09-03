@@ -1,269 +1,244 @@
 <!doctype html>
 <html>
+
 <head>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	    crossorigin="anonymous"></script>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	    crossorigin="anonymous">
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+	    crossorigin="anonymous">
+
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	    crossorigin="anonymous"></script>
+
+
 	<!-- Revmove browser bars in android and IOS  -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Campus XL">
+	<link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<!-- android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="#0B9BE2" />
 
-<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<!-- set icon for ios and android menus -->
+	<!-- <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+<!-- <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png"> -->
+	<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/icons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+	<!-- <link rel="manifest" href="images/icons/manifest.json"> -->
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 
-<meta charset="utf-8">
-<title>Fuel</title>
 
-<link href="styles/UddannelseSide.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="manifest" href="/manifest.json">
+
+	<meta charset="utf-8">
+	<title>Campus XL</title>
+	<link href="styles/UddannelseSide.css" rel="stylesheet" type="text/css">
+	<link href="styles/Footer.css" rel="stylesheet" type="text/css">
+	<link href="styles/Header.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-		<!--	Header		-->
-		<header>
-				<div>
-						<button class="btn btn-primary" onclick="location.href='/index.html'" type="button">Tilbage</button>
-					</div>
-					<div>
-						<h1>Uddannelser</h1>
-					</div>
-				<img id="headerImage" src="images/Logo2.png">
-<!--
-				<div class="burgermenu">
-					<a href="javascript:void(0);" class="icon" onclick="ShowMenu()">&#9776; Menu</a>
-				</div>
-	-->			
-				<!--	dropdown		-->
-				<div class="dropdown">
-					<button onclick="ShowMenu()" class="dropbtn">Find Kategori</button>
-					  <div id="myDropdown" class="dropdown-content">
-						<a href="#noget1">Kategori1</a>
-						<a href="#noget2">Kategori2</a>
-						<a href="#noget3">Kategori3</a>
-					  </div>
-				</div>
-			</header>
- <!--	Content		-->
-<main class="flex-main">
+	<!--	Header		-->
+	<header id="topbar">
 
-	<!--
-	<button class="Kategoriknap" onclick="ShowKategori1()">It Uddannelser</button>
-	<div id="Kategori1">
-		<table class="demo">
-			<tr>
-				<th id="noget1">Uddannelsen</th>
-				<th id="noget2">Hvor Henne</th>
-				<th id="noget3">Læs Mere</th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-				<td>&nbsp;<p>Data Science</p></td>
-				<td>&nbsp;<p>København<br>
-							 Lyngby<br>
-							 Rødovre</p></td>
-				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 1</a></td>
-			</tr>
-			<tr>
-					<td>&nbsp;<p>IT noget</p></td>
-				<td>&nbsp;<p>
-					By1<br>
-					By2<br>
-					By3<br>
-					By4<br>
-					By5<br>
-					By6</p></td>
-				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 2</a></td>
-			</tr>
-			<tr>
-				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 28</a></td>
-				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 28</a></td>
-				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 3</a></td>
-			</tr>
-			<tr>
-				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 28</a></td>
-				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 28</a></td>
-				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 4</a></td>
-			</tr>
-			<tr>
-				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 28</a></td>
-				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 28</a></td>
-				<td>&nbsp;<a href="http://lalalalala.dk/">uddannelse 5</a></td>
-			</tr>
-			<tbody>
-		</table>
+		<img id="headerImage" src="images/Logo.png">
+
+	</header>
+	<!--	Content		-->
+
+	<div class="indhold">
+		<div>
+			<h1 id="Headline" style="margin-top: 10px;">Uddannelser</h1>
+		</div>
+		
+
+		<a id="klasse" class="shiny-btn-small"><i class="arrow"></i>10. Klasse</a>
+		<div class="klasse tablediv">
+			<table class="tablestyle">
+				<tr>
+					<th>Uddannelse</th>
+					<th>Skole</th>
+				</tr>
+				<tr>
+					<td>Almindelig 10. klasse</td>
+					<td>CampusU10</td>
+				</tr>
+				<tr>
+					<td>10. klasse (20/20) Business</td>
+					<td>Knord</td>
+				</tr>
+				<tr>
+					<td>VUC</td>
+					<td>HF & VUC Nordsjælland</td>
+				</tr>
+			</table>
+		</div>
+		<a id="gym" class="shiny-btn-small"><i class="arrow"></i>Gymnasiale uddannelser</a>
+		<div class="gym tablediv">
+			<table class="tablestyle">
+				<tr>
+					<th>Uddannelse</th>
+					<th>Skole</th>
+				</tr>
+				<tr>
+					<td>STX - studentereksamen</td>
+					<td>Frederikssund Gymnasium</td>
+				</tr>
+				<tr>
+					<td>HF - Højere forberedelseseksamen</td>
+					<td>Frederikssund Gymnasium</td>
+				</tr>
+				<tr>
+					<td>HTX - Højere teknisk eksamen</td>
+					<td>Frederikssund Gymnasium og Esnord</td>
+				</tr>
+				<tr>
+					<td>HF enkeltfag - Højere forberedelseseksamen</td>
+					<td>HF & VUC Nordsjælland</td>
+				</tr>
+				<tr>
+					<td>HHX - Højere handelseksamen</td>
+					<td>Knord</td>
+				</tr>
+			</table>
+		</div>
+		<a id="erhverv" class="shiny-btn-small"><i class="arrow"></i>Erhvervsuddannelser</a>
+		<div class="erhverv tablediv">
+			<table class="tablestyle">
+				<tr>
+					<th>Uddannelse</th>
+					<th>Skole</th>
+				</tr>
+				<tr>
+					<td>EUX Business (erhvervsfaglig studentereksamen)</td>
+					<td>Knord</td>
+				</tr>
+				<tr>
+					<td>EUD Business</td>
+					<td>Knord</td>
+				</tr>
+				<tr>
+					<td>EUX - Fremtidens byggeri, produktion og teknologi, grundforløb 1</td>
+					<td>Esnord</td>
+				</tr>
+				<tr>
+					<td>EUD - Fremtidens byggeri, produktion og teknologi, grundforløb 1</td>
+					<td>Esnord</td>
+				</tr>
+				<tr>
+					<td>Omsorg, sundhed og pædagogik, grundforløb 1</td>
+					<td>SOPU</td>
+				</tr>
+				<tr>
+					<td>SOSU-hjælper, grundforløb 2</td>
+					<td>SOPU</td>
+				</tr>
+				<tr>
+					<td>SOSU-assistent, grundforløb 2</td>
+					<td>SOPU</td>
+				</tr>
+				<tr>
+					<td>Tømrer, grundforløb 2</td>
+					<td>Esnord</td>
+				</tr>
+				<tr>
+					<td>Elektriker, grundforløb 2</td>
+					<td>Esnord</td>
+				</tr>
+				<tr>
+					<td>Data og Kommunikation, grundforløb 2</td>
+					<td>TEC</td>
+				</tr>
+			</table>
+		</div>
+		<a id="andre" class="shiny-btn-small"><i class="arrow"></i>Andre uddannelser</a>
+		<div class="andre tablediv">
+				<table class="tablestyle">
+					<tr>
+						<th>Uddannelse</th>
+						<th>Skole</th>
+					</tr>
+					<tr>
+						<td>Produktionsskole</td>
+						<td>PFFU</td>
+					</tr>
+					<tr>
+						<td>Kombineret Ungdomsuddannelse</td>
+						<td>PFFU</td>
+					</tr>
+					<tr>
+						<td>Trekløverskolen, afdeling Marienlyst - folkeskole</td>
+						<td>Trekløverskolen</td>
+					</tr>
+				</table>
+			</div>
+
 	</div>
--->
 
-	  <div class="cd-schedule loading">
-			<div class="timeline">
-				<ul>
-					<li><span>09:00</span></li>
-					<li><span>09:30</span></li>
-					<li><span>10:00</span></li>
-					<li><span>10:30</span></li>
-					<li><span>11:00</span></li>
-					<li><span>11:30</span></li>
-					<li><span>12:00</span></li>
-					<li><span>12:30</span></li>
-					<li><span>13:00</span></li>
-					<li><span>13:30</span></li>
-					<li><span>14:00</span></li>
-					<li><span>14:30</span></li>
-					<li><span>15:00</span></li>
-					<li><span>15:30</span></li>
-					<li><span>16:00</span></li>
-					<li><span>16:30</span></li>
-					<li><span>17:00</span></li>
-					<li><span>17:30</span></li>
-					<li><span>18:00</span></li>
-				</ul>
-			</div> <!-- .timeline -->
-		
-			<div class="events">
-				<ul>
-					<li class="events-group">
-						
-						<div class="top-info" ><div class="arrow" id="arrowturn1"></div>&nbsp;<span>IT</span></div>
-						<ul id="Slideshow1">
-							<li class="single-event" data-content="event-abs-circuit" data-event="event-1">
-								<a href="#0">
-									<em class="event-name">Programør</em>
-								</a>
-							</li>
-		
-							<li class="single-event" data-start="11:00" data-end="12:30" data-content="event-rowing-workout" data-event="event-2">
-								<a href="#0">
-									<em class="event-name">IT-Support</em>
-								</a>
-							</li>
-		
-							<li class="single-event" data-start="14:00" data-end="15:15"  data-content="event-yoga-1" data-event="event-3">
-								<a href="#0">
-									<em class="event-name">uddannelse</em>
-								</a>
-							</li>
-						</ul>
-					</li>
-		
-					<li class="events-group">
-						<div class="top-info"><span>Tuesday</span></div>
-		
-						<ul>
-							<li class="single-event" data-start="10:00" data-end="11:00"  data-content="event-rowing-workout" data-event="event-2">
-								<a href="#0">
-									<em class="event-name">Rowing Workout</em>
-								</a>
-							</li>
-		
-							<li class="single-event" data-start="11:30" data-end="13:00"  data-content="event-restorative-yoga" data-event="event-4">
-								<a href="#0">
-									<em class="event-name">Restorative Yoga</em>
-								</a>
-							</li>
-		
-							<li class="single-event" data-start="13:30" data-end="15:00" data-content="event-abs-circuit" data-event="event-1">
-								<a href="#0">
-									<em class="event-name">Abs Circuit</em>
-								</a>
-							</li>
-		
-							<li class="single-event" data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-3">
-								<a href="#0">
-									<em class="event-name">Yoga Level 1</em>
-								</a>
-							</li>
-						</ul>
-					</li>
-		
-					<li class="events-group">
-						<div class="top-info"><span>Wednesday</span></div>
-		
-						<ul>
-							<li class="single-event" data-start="09:00" data-end="10:15" data-content="event-restorative-yoga" data-event="event-4">
-								<a href="#0">
-									<em class="event-name">Restorative Yoga</em>
-								</a>
-							</li>
-		
-							<li class="single-event" data-start="10:45" data-end="11:45" data-content="event-yoga-1" data-event="event-3">
-								<a href="#0">
-									<em class="event-name">Yoga Level 1</em>
-								</a>
-							</li>
-		
-							<li class="single-event" data-start="12:00" data-end="13:45"  data-content="event-rowing-workout" data-event="event-2">
-								<a href="#0">
-									<em class="event-name">Rowing Workout</em>
-								</a>
-							</li>
-		
-							<li class="single-event" data-start="13:45" data-end="15:00" data-content="event-yoga-1" data-event="event-3">
-								<a href="#0">
-									<em class="event-name">Yoga Level 1</em>
-								</a>
-							</li>
-						</ul>
-					</li>
-		
-					<li class="events-group">
-						<div class="top-info"><span>Thursday</span></div>
-		
-						<ul>
-							<li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
-								<a href="#0">
-									<em class="event-name">Abs Circuit</em>
-								</a>
-							</li>
-		
-							<li class="single-event" data-start="12:00" data-end="13:45" data-content="event-restorative-yoga" data-event="event-4">
-								<a href="#0">
-									<em class="event-name">Restorative Yoga</em>
-								</a>
-							</li>
-		
-							<li class="single-event" data-start="15:30" data-end="16:30" data-content="event-abs-circuit" data-event="event-1">
-								<a href="#0">
-									<em class="event-name">Abs Circuit</em>
-								</a>
-							</li>
-		
-							<li class="single-event" data-start="17:00" data-end="18:30"  data-content="event-rowing-workout" data-event="event-2">
-								<a href="#0">
-									<em class="event-name">Rowing Workout</em>
-								</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
+
+
+	<div id="footer" class="col-xs-12 navbar-inverse navbar-fixed-bottom">
+		<div class="row" id="bottomNav">
+			<div class="col-xs-2 text-center">
+				<a id="forside" href="index.html">
+					<i class="glyphicon glyphicon-home"></i>
+					<br>Forside</a>
 			</div>
-		
-			<div class="event-modal">
-				<header class="header">
-					<div class="content">
-						<span class="event-date"></span>
-						<h3 class="event-name"></h3>
-					</div>
-		
-					<div class="header-bg"></div>
-				</header>
-		
-				<div class="body">
-					<div class="event-info"></div>
-					<div class="body-bg"></div>
-				</div>
-		
-				<a href="#0" class="close">Close</a>
+			<div class="col-xs-2 text-center">
+				<a id="virksomheder" href="Virksomhedsside.html">
+					<i class="glyphicon glyphicon-briefcase"></i>
+					<br>Virksomheder</a>
 			</div>
-		
-			<div class="cover-layer"></div>
-		</div> <!-- .cd-schedule -->
-</div>    
-</main>
+			<div class="col-xs-2 text-center">
+					<a id="calender"  href="calendar.html">
+						<i class="glyphicon glyphicon-list"></i>
+						<br>Program</a>
+			</div>
+			<div class="col-xs-2 text-center">
+				<a id="uddannelse" class="aktiv" href="UddannelseSide.html">
+					<i class="glyphicon glyphicon-education"></i>
+					<br>Uddannelser</a>
+			</div>
+			<div class="col-xs-2 text-center">
+				<a id="quiz" href="QuizSide.html">
+					<i class="glyphicon glyphicon-check"></i>
+					<br>Quiz</a>
+			</div>
+		</div>
+	</div>
 
-	<script src="modernizr.js"></script>
+	<script src="scripts/modernizr.js"></script>
 
-    	<!--	Javascript import	-->
-		<script src="UddannelseSide.js"> </script>
+	<!--	Javascript import	-->
+	<script src="scripts/UddannelseSide.js"> </script>
+	<script>
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker
+                   .register('/sw.js')
+                   .then(function() { console.log("Service Worker Registered"); });
+        }
+        </script>
 </body>
+
 </html>

@@ -1,0 +1,39 @@
+Blå:
+#00aca0
+Gul:
+#ffe555
+Grøn:
+#004e5d
+Rød:
+#f03226
+Orange:
+#fbb80e
+
+#ffe555
+#00aca0
+
+gamle farver:
+Topbar blå: 
+#0B9BE2
+bottomMenu:
+#0B9BE2 0,rgb(9, 123, 180) 100%)
+quiz på forsiden lillar:
+#7681b9
+
+Til Info boxe:
+event 1 box:
+#577f92
+hover:
+#618da1
+event 2 box:
+#443453
+hover:
+#513e63
+event 3 box:
+#a2b9b2
+hover:
+#b1c4be
+event 4 box:
+#f6b067
+hover:
+#f7bd7f

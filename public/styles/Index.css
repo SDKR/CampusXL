@@ -1,16 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-
-
-
-
-
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
-
 body{
 	background:#E8E8E8;
 	margin: 0;
@@ -30,22 +20,24 @@ body{
 
 .Headline {
 	text-align: center;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:700'); */
   
 .shiny-btn {
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
     color: white;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 20px 45px;
-    background-color: #7681b9;
+    padding: 30px 45px;
+    background-color: #f03226;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	text-align: center;
+	display: flex; 
+	justify-content: center;
+	margin-bottom: 40px;
 }
 .shiny-btn:active {
     transform: scale(1);
@@ -53,8 +45,10 @@ body{
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .shiny-btn:hover {
-    transform: scale(1.1);
+	transform: scale(1.1);
+	text-decoration: none;
+	color:white;
     background-position: -60px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 7px 10px rgba(0, 0, 0, 0.23);
 }
 

@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-
+        
 <head>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -22,8 +22,7 @@
     <!-- Revmove browser bars in android and IOS  -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="FUEL">
-    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+    <meta name="apple-mobile-web-app-title" content="Campus XL">
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <!-- android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -34,7 +33,7 @@
 <!-- <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png"> -->
     <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-76x76.png">
     <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
     <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
@@ -49,10 +48,10 @@
     <meta name="theme-color" content="#ffffff">
 
 
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="/manifest.json">
 
     <meta charset="utf-8">
-    <title>Fuel</title>
+    <title>Campus XL</title>
     <link href="styles/Index.css" rel="stylesheet" type="text/css">
     <link href="styles/Footer.css" rel="stylesheet" type="text/css">
     <link href="styles/Header.css" rel="stylesheet" type="text/css">
@@ -65,10 +64,11 @@
 </head>
 
 <body>
+
     <!--	Header		-->
     <header>
 
-        <img id="headerImage" src="images/Logo2.png" <!-- burgermenu -->
+        <img id="headerImage" src="images/Logo.png" <!-- burgermenu -->
         <!-- <div class="burgermenu">
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776; Menu</a>
 		</div> -->
@@ -82,61 +82,71 @@
 
     </header>
 
-    <div class="indhold" style="position: absolute;">
+    <div class="indhold">
 
         <div>
             <br>
-            <h1 class="Headline"> CampusXL</h1>
+            <h1 class="Headline"> CAMPUSDAG XL 2018</h1>
+            <p>Evt introduktionstekst. Man kan fremad se, at de har været udset til at læse, at der skal dannes par af ligheder.  Hvor det er indlysende at online webdesign</p>
+            <br>
         </div>
 
-        <a href="#" class="shiny-btn">Call to action</a>
+        <p style="text-align: center;">Deltag i quizzen og vind fede præmier!</p>
+        <a href="QuizSide.html" class="shiny-btn">QUIZ</a>
 
-        <div class="col-xs-12">
+        <h3>Følg os på</h3>
+
+        <div class="col-xs-12" style="margin-bottom: 70px;">
             <div class="row">
-                <img class=" col-xs-4" src="images/Socialmedia/icon-facebook.png">
-                <img class=" col-xs-4" src="images/Socialmedia/icon-instagram.png">
-                <img class=" col-xs-4" src="images/Socialmedia/icon-snapchat.png">
+                <a id="facebook"> <img class=" col-xs-4" src="images/Socialmedia/icon-facebook.png"> </a>
+                <img id="instagram" class=" col-xs-4" src="images/Socialmedia/icon-instagram.png">
+                <img id="snapchat" class=" col-xs-4" src="images/Socialmedia/icon-snapchat.png">
             </div>
         </div>
     </div>
 
-    <div id="footer">
-        <div class="col-xs-12 navbar-inverse navbar-fixed-bottom">
+        <div id="footer" class="col-xs-12 navbar-inverse navbar-fixed-bottom">
             <div class="row" id="bottomNav">
                 <div class="col-xs-2 text-center">
-                    <a href="index.html">
+                    <a id="forside" class="aktiv" href="index.html">
                         <i class="glyphicon glyphicon-home"></i>
                         <br>Forside</a>
                 </div>
                 <div class="col-xs-2 text-center">
-                    <a href="#">
+                    <a id="virksomheder" href="Virksomhedsside.html">
                         <i class="glyphicon glyphicon-briefcase"></i>
                         <br>Virksomheder</a>
                 </div>
                 <div class="col-xs-2 text-center">
-                        <a href="calendar.html">
+                        <a id="calender" href="calendar.html">
                             <i class="glyphicon glyphicon-list"></i>
-                            <br>Tidsplan</a>
+                            <br>Program</a>
                 </div>
                 <div class="col-xs-2 text-center">
-                    <a href="UddannelseSide.html">
+                    <a id="uddannelse" href="UddannelseSide.html">
                         <i class="glyphicon glyphicon-education"></i>
                         <br>Uddannelser</a>
                 </div>
                 <div class="col-xs-2 text-center">
-                    <a href="QuizSide.html">
+                    <a id="quiz" href="QuizSide.html">
                         <i class="glyphicon glyphicon-check"></i>
                         <br>Quiz</a>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="modernizr.js"></script>
+    <script src="scripts/modernizr.js"></script>
 
 
     <!--	Javascript import	-->
-    <script src="Index.js">
+    <script src="scripts/Index.js">
     </script>
+    <script>
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker
+                   .register('/sw.js')
+                   .then(function() { console.log("Service Worker Registered"); });
+        }
+        </script>
 </body>
 
 </html>

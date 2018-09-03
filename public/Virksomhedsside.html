@@ -1,13 +1,60 @@
 <!doctype html>
 <html>
 <head>
-	<!-- Revmove browser bars in android and IOS  -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
-
-<meta charset="utf-8">
-<title>Fuel</title>
+        <head>
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous">
+    
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+            crossorigin="anonymous">
+    
+    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    
+    
+        <!-- Revmove browser bars in android and IOS  -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Campus XL">
+        <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <!-- android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="#0B9BE2" />
+    
+        <!-- set icon for ios and android menus -->
+        <!-- <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+    <!-- <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png"> -->
+        <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="images/icons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+        <!-- <link rel="manifest" href="images/icons/manifest.json"> -->
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    
+    
+        <link rel="manifest" href="/manifest.json">
+    
+        <meta charset="utf-8">
+        <title>Campus XL</title>
 <link href="styles/StyleVirksomheder.css" rel="stylesheet" type="text/css">
+<link href="styles/Footer.css" rel="stylesheet" type="text/css">
+<link href="styles/Header.css" rel="stylesheet" type="text/css">
 <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -16,82 +63,295 @@
 
 <body>
 
-<main class="flex-main">
+    <!--	Header		-->
+    <header>
 
-    <div>
-        <button onclick="location.href='index.html'" class="btn btn-primary" type="button">Tilbage</button>
-    </div>
+        <img id="headerImage" src="images/Logo.png" <!-- burgermenu -->
+    
+    </header>
+
+    <!--  Content -->
 
     <div class="contentarea">	
-        <!--	Content		-->
         
-        <div class="contentbox" id="TEC">
-            <div class="center">
-                <img alt="error" src="images/img6.jpg">
-                <div onclick="location.href='http://www.tec.dk/'" class="readMore">Læs Mere</div>
-            </div>
-            <h2>TEC</h2>
-            <p>På TEC gør vi alt med vilje - og det er derfor, vi siger: Her bliver du til noget. </p>
-            <p></p>
-        
-        </div>
-    
-        <div class="contentbox" id="Knord">
-            <div class="center">
-                <img alt="error" src="images/img2.png">
-                <div onclick="location.href='https://www.knord.dk/'" class="readMore">Læs Mere</div>
-            </div>		
-            <h2>KNORD</h2>
-            <p>På Knord tilbyder vi både erhvervsuddannelser og gymnasiale uddannelser.</p>
-            <p></p>
-        
-        </div>
-    
-        <div class="contentbox" id="Esnord">
-            <div class="center">
-                <img alt="error" src="images/img3.jpg">
-                <div
-                onclick="location.href='http://www.esnord.dk/'" class="readMore">Læs Mere</div>
-            </div>		
-            <h2>Esnord</h2>
-            <p>Esnord – et suverænt sted at starte! Vi tilbyder: Erhvervsuddannelser, EUX, HHX, HTX og 10. klasse.</p>
-            <p></p>
-        
-        </div>
-    
-        <div class="contentbox" id="SOPU">
-            <div class="center">
-                <img alt="error" src="images/img5.png">
-                <div 	onclick="location.href='https://sopu.dk/'" class="readMore">Læs Mere</div>
-            </div>		
-            <h2>SOPU</h2>
-            <p>Uddannelser til dig, der gerne vil andre det godt. Bliv SOSU-hjælper, SOSU-assistent eller Pædagogisk assistent.</p>
-            <p></p>
-        
-        </div>
-    
-        <div class="contentbox" id="FrederikssundKommune">
-            <div class="center">
-                <img alt="error" src="images/img4.jpg">
-                <div onclick="location.href='https://www.frederikssund.dk/'" class="readMore">Læs Mere</div>
-            </div>		
-            <h2>Frederikssund Kommune</h2>
-            <p>Frederikssund Kommunes hjemmeside.</p>
-            <p></p>
-        
-        </div>
-    
-        <div class="contentbox" id="FrederikssundErhverv">
-            <div class="center">
-                <img alt="error" src="images/img1.jpg">
-                <div 	onclick="location.href='http://www.frederikssunderhvervsportal.dk/'" class="readMore">Læs Mere</div>
-            </div>
-            <h2>Frederikssund Erhverv</h2>
-            <p>CI Frederikssund Erhverv hjælper vi erhvervslivet videre. </p>
-            
-        </div>
-    </div>
-    </main>
+    <!-- Title -->
 
+    <h1 class="title" style="margin-top: 10px;">Virksomheder</h1>
+
+            <div class="contentbox" id="TEC">
+                <div class="center">
+                    <img alt="error" src="images/img6.jpg">
+                    <div onclick="location.href='http://www.tec.dk/'" class="readMore">Læs Mere</div>
+                </div>
+                <h2>TEC</h2>          
+            </div>
+        
+            <div class="contentbox" id="Knord">
+                <div class="center">
+                    <img alt="error" src="images/img2.png">
+                    <div onclick="location.href='https://www.knord.dk/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>KNORD</h2>         
+            </div>
+        
+            <div class="contentbox" id="Esnord">
+                <div class="center">
+                    <img alt="error" src="images/img3.jpg">
+                    <div
+                    onclick="location.href='http://www.esnord.dk/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>Esnord</h2>
+            </div>
+        
+            <div class="contentbox" id="SOPU">
+                <div class="center">
+                    <img alt="error" src="images/img5.png">
+                    <div 	onclick="location.href='https://sopu.dk/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>SOPU</h2>
+            </div>
+        
+            <div class="contentbox" id="FrederikssundKommune">
+                <div class="center">
+                    <img alt="error" src="images/img4.jpg">
+                    <div onclick="location.href='https://www.frederikssund.dk/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>Frederikssund Kommune</h2>
+            </div>
+        
+            <div class="contentbox" id="FrederikssundErhverv">
+                <div class="center">
+                    <img alt="error" src="images/img1.jpg">
+                    <div 	onclick="location.href='http://www.frederikssunderhvervsportal.dk/'" class="readMore">Læs Mere</div>
+                </div>
+                <h2>Frederikssund Erhverv</h2>
+            </div>
+
+            <div class="contentbox" id="3BYG">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/3byg-vindue-rentegnet.png">
+                    <div 	onclick="location.href='http://www.3byg.dk/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>3 Byg Tag & Facade ApS</h2>
+            </div>
+
+            <div class="contentbox" id="UUVest">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/UU Vest - Logo_juni2010.jpg">
+                    <div 	onclick="location.href='https://www.uuvest.dk/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>UUVest</h2>
+            </div>
+
+            <div class="contentbox" id="FrederikssundUngDomsSkole">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/Ungdomsskolen.jpg">
+                    <div 	onclick="location.href='http://www.fusweb.dk/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>Frederikssund Ungdomsskole</h2>
+            </div>
+
+            <div class="contentbox" id="Trekløverskolen">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/Trekloeverskolen_logo_web.jpg">
+                    <div 	onclick="location.href='http://xn--treklverskolen-uqb.dk/sp'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>Trekløverskolen</h2>
+            </div>
+
+            <div class="contentbox" id="Topsil">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/Topsil.png">
+                    <div 	onclick="location.href='http://www.topsil.com/dk.aspx'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>TOPSIL A/S</h2>
+            </div>
+
+            <div class="contentbox" id="Stark">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/Stark logo sammen bygger vi.jpg">
+                    <div 	onclick="location.href='https://www.stark.dk/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>Stark</h2>
+            </div>
+
+            <div class="contentbox" id="SilleBroen">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/Sillebroen-Logo-2016.png">
+                    <div 	onclick="location.href='http://sillebroen.dk/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>Sillebroen</h2>
+            </div>
+
+            <div class="contentbox" id="Mangor&NagelArkitekter">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/MN_logo_ Arkitekter_100_.png">
+                    <div 	onclick="location.href='http://www.mangornagel.dk/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>Mangor & Nagel A/S</h2>
+            </div>
+
+            <div class="contentbox" id="Lomax">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/Lomax Logo_ai.png">
+                    <div 	onclick="location.href='http://www.lomax.dk/om_lomax/'" class="readMore">Læs Mere</div>
+                </div>
+                <h2>Lomax A/S</h2>
+            </div>
+
+            <div class="contentbox" id="MountainTop">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/Logo, MountainTop.png">
+                    <div 	onclick="location.href='http://www.mountaintop.dk/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>Mountain Top Industries ApS</h2>
+            </div>
+
+            <div class="contentbox" id="Føtex">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/logo_fotex_uden_outline_cmyk.png">
+                    <div 	onclick="location.href='https://www.foetex.dk/kundeservice/foetex/job-i-foetex'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>Føtex</h2>
+            </div>
+
+            <div class="contentbox" id="Husmer">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/Husmer_logo_Pantone_v.7.png">
+                    <div 	onclick="location.href='https://husmer.dk/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>Husmer Glas og Facade</h2>
+            </div>
+
+            <div class="contentbox" id="HaldorTopsøe">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/HT_logo_Eng_RGB_Black.png">
+                    <div 	onclick="location.href='https://www.topsoe.com/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>Haldor Topsøe A/S</h2>
+            </div>
+
+            <div class="contentbox" id="HelboHansen">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/HELBO_LOGO_FULL_CMYK.png">
+                    <div 	onclick="location.href='https://helbo.dk/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>H. HELBO HANSEN A/S</h2>
+            </div>
+
+            <div class="contentbox" id="Anlægsgartner">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/gartner gottlieb.png">
+                    <div 	onclick="location.href='https://gartnergottlieb.dk/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>Anlægsgartner Gottlieb A/S</h2>
+            </div>
+
+            <div class="contentbox" id="ELABC">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/">
+                    <div 	onclick="location.href='http://www.el-abc.dk/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>EL-ABC A/S</h2>
+            </div>
+
+            <div class="contentbox" id="co-ro">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/CORO_cmyk_27_mm_tagline.png">
+                    <div 	onclick="location.href='http://www.co-ro.com/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>CO-RO A/S</h2>
+            </div>
+
+            <div class="contentbox" id="Campus">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/Campus_logo_rentegn_web.jpg">
+                    <div 	onclick="location.href='http://www.campus.frederikssund.dk/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>Campus Frederikssund</h2>
+            </div>
+
+            <div class="contentbox" id="Brenntag">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/BrenntagLogo.GIF">
+                    <div 	onclick="location.href='https://www.brenntag.com/denmark/da/index.jsp'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>Brenntag Biosector A/S</h2>
+            </div>
+
+            <div class="contentbox" id="Bautahoj">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/bautalogopng.png">
+                    <div 	onclick="location.href='http://www.bautahoj.dk/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>Bautahøj Konferencecenter</h2>
+            </div>
+
+            <div class="contentbox" id="Bang-Nielsen">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/Bang Nielsen.png">
+                    <div 	onclick="location.href='http://bang-nielsen.dk/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>Bang Nielsen A/S</h2>
+            </div>
+
+            <div class="contentbox" id="Attendo">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/Attendo_pos_150mm150dpi.png">
+                    <div 	onclick="location.href='https://www.attendo.dk/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>Attendo A/S</h2>
+            </div>
+
+            <div class="contentbox" id="Procom">
+                <div class="center">
+                    <img alt="error" src="images/Virksomhedslogoer/Amphenol Procom_logo_print_CMYK.png">
+                    <div 	onclick="location.href='http://procom.dk/'" class="readMore">Læs Mere</div>
+                </div>		
+                <h2>Procom A/S</h2>
+            </div>
+
+        </div>
+
+    <!-- Footer -->
+
+
+            <div id="footer" class="col-xs-12 navbar-inverse navbar-fixed-bottom">
+                <div class="row" id="bottomNav">
+                    <div class="col-xs-2 text-center">
+                        <a id="forside" href="index.html">
+                            <i class="glyphicon glyphicon-home"></i>
+                            <br>Forside</a>
+                    </div>
+                    <div class="col-xs-2 text-center">
+                        <a id="virksomheder" class="aktiv" href="Virksomhedsside.html">
+                            <i class="glyphicon glyphicon-briefcase"></i>
+                            <br>Virksomheder</a>
+                    </div>
+                    <div class="col-xs-2 text-center">
+                            <a id="calender"  href="calendar.html">
+                                <i class="glyphicon glyphicon-list"></i>
+                                <br>Program</a>
+                    </div>
+                    <div class="col-xs-2 text-center">
+                        <a id="uddannelse" href="UddannelseSide.html">
+                            <i class="glyphicon glyphicon-education"></i>
+                            <br>Uddannelser</a>
+                    </div>
+                    <div class="col-xs-2 text-center">
+                        <a id="quiz" href="QuizSide.html">
+                            <i class="glyphicon glyphicon-check"></i>
+                            <br>Quiz</a>
+                    </div>
+                </div>
+            </div>
+    <script src="scripts/Virksomhedsside.js"></script>
+    <script>
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker
+                   .register('/sw.js')
+                   .then(function() { console.log("Service Worker Registered"); });
+        }
+        </script>
 </body>
 </html>
