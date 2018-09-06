@@ -2,20 +2,10 @@
 <html>
 
 <head>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	    crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.min.css">
 
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	    crossorigin="anonymous">
-
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-	    crossorigin="anonymous">
-
-
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-	    crossorigin="anonymous"></script>
 
 
 	<!-- Revmove browser bars in android and IOS  -->
@@ -26,11 +16,8 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no" />
 	<!-- android -->
 	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="theme-color" content="#0B9BE2" />
 
 	<!-- set icon for ios and android menus -->
-	<!-- <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
-<!-- <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png"> -->
 	<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
@@ -71,131 +58,279 @@
 		<div>
 			<h1 id="Headline" style="margin-top: 10px;">Uddannelser</h1>
 		</div>
-		
+
+		<div>
+			<p>Tryk på en uddannelse for at læse mere:</p>
+		</div>
 
 		<a id="klasse" class="shiny-btn-small"><i class="arrow"></i>10. Klasse</a>
 		<div class="klasse tablediv">
-			<table class="tablestyle">
+			<table id="table1" class="tablestyle">
+				<col width="100">
+				<col width="50">
+				<col width="40">
 				<tr>
 					<th>Uddannelse</th>
-					<th>Skole</th>
+					<th colspan="2">Skole</th>
 				</tr>
-				<tr>
+				<tr id="klasse10">
 					<td>Almindelig 10. klasse</td>
 					<td>CampusU10</td>
+					<td class="school"><img src="images/Campus-u10.png"></td>
 				</tr>
-				<tr>
+				<tr id="klassebusiness10">
 					<td>10. klasse (20/20) Business</td>
 					<td>Knord</td>
+					<td class="school"><img src="images/img2.png"></td>
 				</tr>
-				<tr>
+				<tr id="vuc">
 					<td>VUC</td>
 					<td>HF & VUC Nordsjælland</td>
+					<td class="school"><img src="images/Virksomhedslogoer/VUC.jpg"></td>
 				</tr>
 			</table>
 		</div>
 		<a id="gym" class="shiny-btn-small"><i class="arrow"></i>Gymnasiale uddannelser</a>
 		<div class="gym tablediv">
 			<table class="tablestyle">
+				<col width="100">
+				<col width="50">
+				<col width="40">
 				<tr>
 					<th>Uddannelse</th>
-					<th>Skole</th>
+					<th colspan="2">Skole</th>
 				</tr>
-				<tr>
+				<tr id="stx">
 					<td>STX - studentereksamen</td>
 					<td>Frederikssund Gymnasium</td>
+					<td class="school"><img src="images/Virksomhedslogoer/Frederikssund-Gymnasium.jpg"></td>
 				</tr>
-				<tr>
+				<tr id="hf">
 					<td>HF - Højere forberedelseseksamen</td>
 					<td>Frederikssund Gymnasium</td>
+					<td class="school"> <img src="images/Virksomhedslogoer/Frederikssund-Gymnasium.jpg"></td>
 				</tr>
-				<tr>
+				<tr id="htx">
 					<td>HTX - Højere teknisk eksamen</td>
 					<td>Frederikssund Gymnasium og Esnord</td>
+					<td class="school"><img src="images/Virksomhedslogoer/Frederikssund-Gymnasium.jpg"></td>
 				</tr>
-				<tr>
+				<tr id="hfenkeltfag">
 					<td>HF enkeltfag - Højere forberedelseseksamen</td>
 					<td>HF & VUC Nordsjælland</td>
+					<td class="school"><img src="images/Virksomhedslogoer/VUC.jpg"></td>
 				</tr>
-				<tr>
+				<tr id="hhx">
 					<td>HHX - Højere handelseksamen</td>
 					<td>Knord</td>
+					<td class="school"><img src="images/img2.png"></td>
 				</tr>
 			</table>
 		</div>
 		<a id="erhverv" class="shiny-btn-small"><i class="arrow"></i>Erhvervsuddannelser</a>
 		<div class="erhverv tablediv">
 			<table class="tablestyle">
+				<col width="100">
+				<col width="50">
+				<col width="40">
 				<tr>
 					<th>Uddannelse</th>
-					<th>Skole</th>
+					<th colspan="2">Skole</th>
 				</tr>
-				<tr>
+				<tr id="euxbuisness">
 					<td>EUX Business (erhvervsfaglig studentereksamen)</td>
 					<td>Knord</td>
+					<td class="school"><img src="images/img2.png"></td>
 				</tr>
-				<tr>
+				<tr id="eudbusiness">
 					<td>EUD Business</td>
 					<td>Knord</td>
+					<td class="school"><img src="images/img2.png"></td>
 				</tr>
-				<tr>
+				<tr id="eux">
 					<td>EUX - Fremtidens byggeri, produktion og teknologi, grundforløb 1</td>
 					<td>Esnord</td>
+					<td class="school"><img src="images/Virksomhedslogoer/Esnord_dk_logo.jpg"></td>
 				</tr>
-				<tr>
+				<tr id="eud">
 					<td>EUD - Fremtidens byggeri, produktion og teknologi, grundforløb 1</td>
 					<td>Esnord</td>
+					<td class="school"><img src="images/Virksomhedslogoer/Esnord_dk_logo.jpg"></td>
 				</tr>
-				<tr>
+				<tr id="omsorg">
 					<td>Omsorg, sundhed og pædagogik, grundforløb 1</td>
 					<td>SOPU</td>
+					<td class="school"><img src="images/img5.png"></td>
 				</tr>
-				<tr>
+				<tr id="sosuhjælper">
 					<td>SOSU-hjælper, grundforløb 2</td>
 					<td>SOPU</td>
+					<td class="school"><img src="images/img5.png"></td>
 				</tr>
-				<tr>
+				<tr id="sosuass">
 					<td>SOSU-assistent, grundforløb 2</td>
 					<td>SOPU</td>
+					<td class="school"><img src="images/img5.png"></td>
 				</tr>
-				<tr>
+				<tr id="tømrer">
 					<td>Tømrer, grundforløb 2</td>
 					<td>Esnord</td>
+					<td class="school"><img src="images/Virksomhedslogoer/Esnord_dk_logo.jpg"></td>
 				</tr>
-				<tr>
+				<tr id="elektriker">
 					<td>Elektriker, grundforløb 2</td>
 					<td>Esnord</td>
+					<td class="school"><img src="images/Virksomhedslogoer/Esnord_dk_logo.jpg"></td>
 				</tr>
-				<tr>
+				<tr id="data">
 					<td>Data og Kommunikation, grundforløb 2</td>
 					<td>TEC</td>
+					<td class="school"><img src="images/img6.jpg"></td>
 				</tr>
 			</table>
 		</div>
 		<a id="andre" class="shiny-btn-small"><i class="arrow"></i>Andre uddannelser</a>
 		<div class="andre tablediv">
-				<table class="tablestyle">
-					<tr>
-						<th>Uddannelse</th>
-						<th>Skole</th>
-					</tr>
-					<tr>
-						<td>Produktionsskole</td>
-						<td>PFFU</td>
-					</tr>
-					<tr>
-						<td>Kombineret Ungdomsuddannelse</td>
-						<td>PFFU</td>
-					</tr>
-					<tr>
-						<td>Trekløverskolen, afdeling Marienlyst - folkeskole</td>
-						<td>Trekløverskolen</td>
-					</tr>
-				</table>
+			<table class="tablestyle">
+				<col width="100">
+				<col width="50">
+				<col width="40">
+				<tr>
+					<th>Uddannelse</th>
+					<th colspan="2">Skole</th>
+				</tr>
+				<tr id="produktion">
+					<td>Produktionsskole</td>
+					<td>PFFU</td>
+					<td class="school"><img src="images/Virksomhedslogoer/PFFU.jpg"></td>
+				</tr>
+				<tr id="kombineret">
+					<td>Kombineret Ungdomsuddannelse</td>
+					<td>PFFU</td>
+					<td class="school"><img src="images/Virksomhedslogoer/PFFU.jpg"></td>
+				</tr>
+				<tr id="trekløver">
+					<td>Trekløverskolen, afdeling Marienlyst - folkeskole</td>
+					<td>Trekløverskolen</td>
+					<td class="school"><img src="images/Virksomhedslogoer/Trekloeverskolen_logo_web.jpg"></td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="contentarea">
+			<div class="contentbox" id="TEC">
+				<div class="center" onclick="location.href='http://www.tec.dk/'">
+					<img alt="error" src="images/img6.jpg">
+					<div  class="readMore">Læs Mere</div>
+				</div>
+				<h2>TEC</h2>
 			</div>
+
+			<div class="contentbox" id="Knord">
+				<div class="center" onclick="location.href='https://www.knord.dk/'">
+					<img alt="error" src="images/img2.png">
+					<div  class="readMore">Læs Mere</div>
+				</div>
+				<h2>KNORD</h2>
+			</div>
+
+			<div class="contentbox" id="Esnord">
+				<div class="center" onclick="location.href='http://www.esnord.dk/'">
+					<img alt="error" src="images/img3.jpg">
+					<div  class="readMore">Læs Mere</div>
+				</div>
+				<h2>Esnord</h2>
+			</div>
+
+			<div class="contentbox" id="SOPU">
+				<div class="center" onclick="location.href='https://sopu.dk/'">
+					<img alt="error" src="images/img5.png">
+					<div  class="readMore">Læs Mere</div>
+				</div>
+				<h2>SOPU</h2>
+			</div>
+
+			<div class="contentbox" id="Trekløverskolen">
+				<div class="center" onclick="location.href='http://xn--treklverskolen-uqb.dk/sp'">
+					<img alt="error" src="images/Virksomhedslogoer/Trekloeverskolen_logo_web.jpg">
+					<div  class="readMore">Læs Mere</div>
+				</div>
+				<h2>Trekløverskolen</h2>
+			</div>
+			<div class="contentbox" id="CampusU10">
+				<div class="center" onclick="location.href='http://campusu10.dk/'">
+					<img alt="error" src="images/Campus-u10.png">
+					<div  class="readMore">Læs Mere</div>
+				</div>
+				<h2>CampusU10</h2>
+			</div>
+			<div class="contentbox">
+				<div class="center" onclick="location.href='https://www.vucns.dk/'">
+					<img alt="error" src="images/Virksomhedslogoer/VUC.jpg">
+					<div  class="readMore">Læs Mere</div>
+				</div>
+				<h2>HF & VUC Nordsjælland</h2>
+			</div>
+			<div class="contentbox" id="Trekløverskolen">
+				<div class="center" onclick="location.href='https://frsgym.dk/'">
+					<img alt="error" src="images/Virksomhedslogoer/Frederikssund-Gymnasium.jpg">
+					<div  class="readMore">Læs Mere</div>
+				</div>
+				<h2>Frederikssund Gymnasium</h2>
+			</div>
+			<div class="contentbox" id="Trekløverskolen">
+					<div class="center" onclick="location.href='http://pffu.dk/'">
+						<img alt="error" src="images/Virksomhedslogoer/PFFU.jpg">
+						<div  class="readMore">Læs Mere</div>
+					</div>
+					<h2>PFFU</h2>
+				</div>
+			<div class="contentbox" id="UUVest">
+				<div class="center" onclick="location.href='https://www.uuvest.dk/'">
+					<img alt="error" src="images/Virksomhedslogoer/UU Vest - Logo_juni2010.jpg">
+					<div class="readMore">Læs Mere</div>
+				</div>
+				<h2>UUVest</h2>
+			</div>
+		</div>
+
+
+
+		<div class="contentbox" id="FrederikssundUngDomsSkole">
+			<div class="center" onclick="location.href='http://www.fusweb.dk/'">
+				<img alt="error" src="images/Virksomhedslogoer/Ungdomsskolen.jpg">
+				<div onclick="location.href='http://www.fusweb.dk/'" class="readMore">Læs Mere</div>
+			</div>
+			<h2>Frederikssund Ungdomsskole</h2>
+		</div>
+
 
 	</div>
 
+	<div class="cd-schedule">
+
+			<div class="event-modal" id="indhold">
+				<header class="header">
+					<div class="content">
+						<span class="event-date"></span>
+						<h3 class="event-name"></h3>
+					</div>
+	
+					<div class="header-bg"></div>
+				</header>
+	
+				<div class="body">
+					<div class="event-info">
+						<div></div>
+					</div>
+					<div class="body-bg"></div>
+				</div>
+	
+				<a class="close">Close</a>
+			</div>
+	
+			<div class="cover-layer"></div>
+		</div> <!-- .cd-schedule -->
 
 
 	<div id="footer" class="col-xs-12 navbar-inverse navbar-fixed-bottom">
@@ -211,9 +346,9 @@
 					<br>Virksomheder</a>
 			</div>
 			<div class="col-xs-2 text-center">
-					<a id="calender"  href="calendar.html">
-						<i class="glyphicon glyphicon-list"></i>
-						<br>Program</a>
+				<a id="calender" href="calendar.html">
+					<i class="glyphicon glyphicon-list"></i>
+					<br>Program</a>
 			</div>
 			<div class="col-xs-2 text-center">
 				<a id="uddannelse" class="aktiv" href="UddannelseSide.html">
@@ -227,18 +362,13 @@
 			</div>
 		</div>
 	</div>
-
-	<script src="scripts/modernizr.js"></script>
+	
 
 	<!--	Javascript import	-->
+	<script src="lib/jquery/jquery-3.3.1.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="lib/modernizr/modernizr.js"></script>
 	<script src="scripts/UddannelseSide.js"> </script>
-	<script>
-        if('serviceWorker' in navigator) {
-          navigator.serviceWorker
-                   .register('/sw.js')
-                   .then(function() { console.log("Service Worker Registered"); });
-        }
-        </script>
 </body>
 
 </html>

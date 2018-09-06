@@ -2,20 +2,8 @@
 <html>
 <head>
 
-		<script
-		src="https://code.jquery.com/jquery-3.3.1.min.js"
-		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-		crossorigin="anonymous"></script>
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.min.css">
 
 	<!-- Revmove browser bars in android and IOS  -->
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -25,11 +13,8 @@
 <meta name="viewport" content="width=device-width, user-scalable=no" />
 	<!-- android -->
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#0B9BE2" />
 
 	<!-- set icon for ios and android menus -->
-<!-- <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
-<!-- <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png"> -->
 <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
 <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
@@ -69,6 +54,8 @@
 	
 	<div class="indhold">
 	  <div class="cd-schedule loading">
+		  <div id="Program"><h1>Program</h1></div>
+		  <p style="text-align: center; margin-bottom: 0; font-size: 14px;">Tryk på en knap for at få mere information</p>
 			<div class="timeline">
 				<ul>
 					<li><span>11:00</span></li>
@@ -96,7 +83,7 @@
 				<ul>
 					<li class="events-group">
 						<!--<div class="top-info"><span>Program</span></div>-->
-						<div id="Program"><h2>Program &nbsp; &nbsp; </h2></div>
+						<div id="Program"></div>
 		
 						<ul>
 							<li class="single-event" data-start="11:00" data-end="12:30" data-content="Kasse1" data-event="event-1">
@@ -133,24 +120,6 @@
 									<em class="event-name">Kickoff - Ceremoni</em>
 								</a>
 							</li>
-		<!--
-							<li class="single-event" data-start="11:00" data-end="12:30"  data-content="event-restorative-yoga" data-event="event-4">
-								<a href="#0">
-									<em class="event-name">Elever besøger virksomheder</em>
-								</a>
-							</li>
-		
-							<li class="single-event" data-start="13:30" data-end="15:00" data-content="event-abs-circuit" data-event="event-1">
-								<a href="#0">
-									<em class="event-name">Abs Circuit</em>
-								</a>
-							</li>
-		
-							<li class="single-event" data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-3">
-								<a href="#0">
-									<em class="event-name">Yoga Level 1</em>
-								</a>
-							</li>-->
 						</ul>
 					</li>
 		
@@ -163,24 +132,6 @@
 									<em class="event-name">Heat 2 for grundskolelever: Karrierelæring</em>
 								</a>
 							</li>
-		<!--
-							<li class="single-event" data-start="11:30" data-end="11:45" data-content="event-yoga-1" data-event="event-3">
-								<a href="#0">
-									<em class="event-name">Yoga Level 1</em>
-								</a>
-							</li>
-		
-							<li class="single-event" data-start="12:00" data-end="13:45"  data-content="event-rowing-workout" data-event="event-2">
-								<a href="#0">
-									<em class="event-name">Rowing Workout</em>
-								</a>
-							</li>
-		
-							<li class="single-event" data-start="13:45" data-end="15:00" data-content="event-yoga-1" data-event="event-3">
-								<a href="#0">
-									<em class="event-name">Yoga Level 1</em>
-								</a>
-							</li>-->
 						</ul>
 					</li>
 		
@@ -193,48 +144,8 @@
 									<em class="event-name">Heat 3 for hele familien</em>
 								</a>
 							</li>
-		<!--
-							<li class="single-event" data-start="12:00" data-end="13:45" data-content="event-restorative-yoga" data-event="event-4">
-								<a href="#0">
-									<em class="event-name">Restorative Yoga</em>
-								</a>
-							</li>
-		
-							<li class="single-event" data-start="15:30" data-end="16:30" data-content="event-abs-circuit" data-event="event-1">
-								<a href="#0">
-									<em class="event-name">Abs Circuit</em>
-								</a>
-							</li>
-		
-							<li class="single-event" data-start="17:00" data-end="18:30"  data-content="event-rowing-workout" data-event="event-2">
-								<a href="#0">
-									<em class="event-name">Rowing Workout</em>
-								</a>
-							</li>-->
 						</ul>
 					</li>
-		<!--
-					<li class="events-group">
-						<div class="top-info"><span>Friday</span></div>
-		
-						<ul>
-							<li class="single-event" data-start="11:00" data-end="11:30"  data-content="event-rowing-workout" data-event="event-2">
-								<a href="#0">
-									<em class="event-name">Rowing Workout</em>
-								</a>
-							</li>
-		
-							<li class="single-event" data-start="12:30" data-end="14:00" data-content="event-abs-circuit" data-event="event-1">
-								<a href="#0">
-									<em class="event-name">Abs Circuit</em>
-								</a>
-							</li>
-		
-							<!-- <li class="single-event" data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-3">
-								<a href="#0">
-									<em class="event-name">Yoga Level 1</em>
-								</a>
-							</li> -->
 						</ul>
 					</li>
 				</ul>
@@ -293,23 +204,11 @@
 					</div>
 				</div>
 				</div>
-		<script src="scripts/modernizr.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	  	<!--	Javascript import	-->
-	<script src="scripts/calender.js"> </script>
+		
+		  	<!--	Javascript import	-->
+		<script src="lib/modernizr/modernizr.js"></script>
+		<script src="lib/jquery/jquery-3.3.1.js"></script>
+		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="scripts/calender.js"> </script>
 </body>
 </html>

@@ -1,10 +1,33 @@
-$("<style id='styling' type='text/css'> .indhold div:nth-of-type(2){padding-top: " + ($("header").outerHeight() + 5) + "px;}  </style>").appendTo("head");
+if('serviceWorker' in navigator) {
+	navigator.serviceWorker
+			 .register('/sw.js')
+			 .then(function() { console.log("Service Worker Registered"); });
+  }
 
+$("<style id='styling' type='text/css'> .cd-schedule{padding-top: " + ($("header").outerHeight() + 5) + "px;}  </style>").appendTo("head");
 
 window.addEventListener('resize', function () {
-	$("#styling").html("<style id='styling' type='text/css'> .indhold div:nth-of-type(2){padding-top: " + ($("header").outerHeight() + 5) + "px;}  </style>");
+	$("#styling").html("<style id='styling' type='text/css'> .cd-schedule{padding-top: " + ($("header").outerHeight() + 5) + "px;}  </style>");
 });
 
+// Social media
+
+$("#headerImage").click(function() {
+	var ua = navigator.userAgent;
+	var checker = {
+		iphone: ua.match(/(iPhone|iPod|iPad)/),
+		android: ua.match(/Android/)
+	  };
+	  if (checker.android){
+		window.open("intent://#Intent;package=com.facebook.katana;scheme=fb://page/118797611557016?referrer=app_link;end");
+	  }
+	  else if (checker.iphone){
+		window.open("fb://profile/118797611557016");
+	  }
+	  else {
+		window.open("https://da-dk.facebook.com/Campusfrederikssund/").show();
+	  }
+  });
 
 
 

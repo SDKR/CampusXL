@@ -4,7 +4,7 @@
     "name": "Campus XL",
     "scope": "/",
     "display": "standalone",
-    "start_url": "https://fuel-pwa-firebaseapp.com",
+    "start_url": "https://fuel-pwa.firebaseapp.com",
     "short_name": "Campus XL",
     "theme_color": "#0B9BE2",
     "description": "",
@@ -71,6 +71,11 @@
         {
             "src": "./images/icons/ms-icon-144x144.png",
             "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/icons/android-icon-512x512.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ]

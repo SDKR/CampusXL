@@ -30,13 +30,13 @@ body{
 	font-family: "Montserrat", sans-serif;
 	color: black;
 	font-weight: bold;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	text-decoration: none;
 	text-transform: uppercase;
 	height: 10%;
 	width: 100%;
-	padding: 5% 0%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	padding: 7% 0%;
+  	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	text-align: center;
 	display: block;
 }
@@ -104,3 +104,249 @@ body{
   transform: rotate(45deg);
   transition: transform 0.5s linear;
 } 
+
+.contentarea {
+	background-color: rgb(241, 241, 241);
+}
+
+.title {
+	text-align: center;
+}
+
+.contentbox{
+	position: relative;
+	width: 46.3%;
+	/* height: 165px; */
+	height:35%;
+	margin-top: 10px;
+	margin-left: 2.5%;
+	/* background-color: #c0c0c0; */
+	float:left;
+	text-align: center;
+	/* border-radius: 8px; */
+	/* overflow:hidden; */
+	/* word-wrap: break-word; */
+	/* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+	padding: 1%;
+}
+
+.contentbox h2 {
+	/* line-height: 15px; */
+	margin-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: left;
+	font-size: 16px;
+	height: 25px;
+	/* font-size: 2vh; */
+}
+
+.contentbox p {
+	/* line-height: 20px; */
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: left;
+	font-size: 16px;
+}
+
+.contentbox img{
+	width: 100%;
+	height:130px;
+	object-fit: contain;
+	background: white;
+	/* border-top-right-radius: 8px;  */
+	/* border-top-left-radius: 8px;  */
+}
+
+.readMore{
+	position: absolute;
+	/* bottom: 26%; */
+	top: 1.8%;
+    left: 2%;
+	/* background: #e74c3c; */
+	background: #f03226;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 600;
+	/* border-bottom-right-radius: 10px;  */
+}
+
+.readMore:hover{
+	cursor: pointer;
+	box-shadow: 0 0 1rem crimson;
+}
+
+#FrederikssundUngDomsSkole {
+	margin-bottom: 80px;
+}
+
+@media only screen and (min-width: 600px) {
+	.contentbox {
+		width: 30%;
+	}
+}
+
+.tablestyle td{
+	padding: 0;
+	height: 56px;
+}
+.school img{
+	width: 100%;
+	object-fit: contain;
+	object-position: center center;
+	background: rgb(255, 255, 255);
+}
+
+.cd-schedule .event-modal {
+	position: fixed;
+	z-index: 3;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	visibility: hidden;
+	/* Force Hardware acceleration */
+	-webkit-transform: translateZ(0);
+			transform: translateZ(0);
+	-webkit-transform: translateX(100%);
+		-ms-transform: translateX(100%);
+			transform: translateX(100%);
+	-webkit-transition: visibility .4s, -webkit-transform .4s;
+	transition: visibility .4s, -webkit-transform .4s;
+	transition: transform .4s, visibility .4s;
+	transition: transform .4s, visibility .4s, -webkit-transform .4s;
+	-webkit-transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+			transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+  }
+  
+  .cd-schedule .event-modal .header {
+	position: relative;
+	height: 70px;
+	/* vertically center its content */
+	display: table;
+	width: 100%;
+  }
+  
+  .cd-schedule .event-modal .header .content {
+	position: relative;
+	z-index: 3;
+	/* vertically center inside its parent */
+	display: table-cell;
+	vertical-align: middle;
+	padding: .6em 5%;
+  }
+  
+  .cd-schedule .event-modal .body {
+	position: relative;
+	width: 100%;
+	/* 70px is the .header height */
+	height: calc(100% - 70px);
+  }
+  
+  .cd-schedule .event-modal .event-info {
+	position: relative;
+	z-index: 2;
+	line-height: 1.4;
+	height: 100%;
+	/* overflow: hidden; */
+  }
+  
+  .cd-schedule .event-modal .event-info > div {
+	/* overflow: hidden; */
+	height: 100%;
+	padding: 1.4em 5%;
+  }
+  
+  .cd-schedule .event-modal .header-bg, .cd-schedule .event-modal .body-bg {
+	/* these are the morphing backgrounds - visible on desktop only */
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+  }
+  
+  .cd-schedule .event-modal .body-bg {
+	z-index: 1;
+	background: white;
+	-webkit-transform-origin: top left;
+		-ms-transform-origin: top left;
+			transform-origin: top left;
+  }
+  
+  .cd-schedule .event-modal .header-bg {
+	z-index: 2;
+	-webkit-transform-origin: top center;
+		-ms-transform-origin: top center;
+			transform-origin: top center;
+  }
+  
+  .cd-schedule .event-modal .close {
+	/* this is the 'X' icon */
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 3;
+	background: rgba(0, 0, 0, 0.1);
+	/* replace text with icon */
+	color: transparent;
+	white-space: nowrap;
+	text-indent: 100%;
+	height: 90px;
+	width: 70px;
+  }
+  
+  .cd-schedule .event-modal .close::before, .cd-schedule .event-modal .close::after {
+	/* these are the two lines of the 'X' icon */
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 2px;
+	height: 22px;
+	background: white;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  }
+  
+  .cd-schedule .event-modal .close::before {
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+		-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+			transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  }
+  
+  .cd-schedule .event-modal .close::after {
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+		-ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+			transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  }
+  
+  .cd-schedule .event-modal .event-date {
+	display: none;
+  }
+  
+  .cd-schedule .event-modal.no-transition {
+	-webkit-transition: none;
+	transition: none;
+  }
+  
+  .cd-schedule .event-modal.no-transition .header-bg, .cd-schedule .event-modal.no-transition .body-bg {
+	-webkit-transition: none;
+	transition: none;
+  }
+  
+  .cd-schedule.modal-is-open .event-modal {
+	/* .modal-is-open class is added as soon as an event is selected */
+	-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+			transform: translateX(0);
+	visibility: visible;
+  }
+  
+  .cd-schedule.modal-is-open .event-modal .event-info > div {
+	/* smooth scroll on iOS touch devices */
+	-webkit-overflow-scrolling: touch;
+  }

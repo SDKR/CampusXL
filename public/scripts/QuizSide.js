@@ -1,3 +1,27 @@
+if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('/sw.js')
+             .then(function() { console.log("Service Worker Registered"); });
+  }
+// social media
+
+$("#headerImage").click(function() {
+    var ua = navigator.userAgent;
+    var checker = {
+        iphone: ua.match(/(iPhone|iPod|iPad)/),
+        android: ua.match(/Android/)
+      };
+      if (checker.android){
+        window.open("intent://#Intent;package=com.facebook.katana;scheme=fb://page/118797611557016?referrer=app_link;end");
+      }
+      else if (checker.iphone){
+        window.open("fb://profile/118797611557016");
+      }
+      else {
+        window.open("https://da-dk.facebook.com/Campusfrederikssund/").show();
+      }
+  });
+
 var quizType = -1;
 var quizSideData = null;
 $.getJSON("/QuizSideData.json", function(json) {

@@ -3,34 +3,28 @@
         
 <head>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-        crossorigin="anonymous">
-
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-
-
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="lib/slick/slick-theme.css">
+    
     <!-- Revmove browser bars in android and IOS  -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Campus XL">
+
+    <!-- Apple start screen -->
+    <link rel="apple-touch-startup-image" href="images/Splash/SplashScreen1242x2208.png">
+    <link rel="apple-touch-startup-image" href="images/Splash/SplashScreen640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="images/Splash/SplashScreen750x1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="images/Splash/SplashScreen1242x2208.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="images/Splash/SplashScreen1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <!-- android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#0B9BE2" />
 
     <!-- set icon for ios and android menus -->
-    <!-- <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
-<!-- <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png"> -->
     <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-76x76.png">
@@ -38,11 +32,11 @@
     <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/icons/android-icon-512x512.png">
     <link rel="icon" type="image/png" sizes="192x192" href="images/icons/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
-    <!-- <link rel="manifest" href="images/icons/manifest.json"> -->
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -58,9 +52,6 @@
     
 
     <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/> -->
-
-    
-
 </head>
 
 <body>
@@ -68,39 +59,35 @@
     <!--	Header		-->
     <header>
 
-        <img id="headerImage" src="images/Logo.png" <!-- burgermenu -->
-        <!-- <div class="burgermenu">
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776; Menu</a>
-		</div> -->
-
-        <!--	dropdown		-->
-        <!-- <div id="myDropdown" class="dropdown">
-    		<a $('#').goTo(); href="/Virksomhedsside.html">Virksomheder</a>
-    		<a $('#').goTo(); href="/UddannelseSide.html">Uddannelser</a>
-    		<a $('#').goTo(); href="/QuizSide.html" >Quiz</a>
-  		</div> -->
+        <a href=""><img id="headerImage" src="images/Logo.png" ></a>
 
     </header>
 
     <div class="indhold">
-
         <div>
+            <div class="conta">
+                <div class="autoplay" style="width: 100%;">
+                        <div ><img style="width: 100%;" src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&h=350" alt=""></div>
+                        <div ><img style="width: 100%;" src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&h=350" alt=""></div>
+                        <div ><img style="width: 100%;" src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&h=350" alt=""></div>
+                      </div>
+                      <h1 class="Headline centered"> CAMPUSDAG XL 2018</h1>
+                </div>
             <br>
-            <h1 class="Headline"> CAMPUSDAG XL 2018</h1>
-            <p>Evt introduktionstekst. Man kan fremad se, at de har været udset til at læse, at der skal dannes par af ligheder.  Hvor det er indlysende at online webdesign</p>
+            
+            
+            <h4 id="flavourtext">Deltag i quizzen og vind fede præmier!</h4>
             <br>
         </div>
-
-        <p style="text-align: center;">Deltag i quizzen og vind fede præmier!</p>
         <a href="QuizSide.html" class="shiny-btn">QUIZ</a>
 
         <h3>Følg os på</h3>
 
         <div class="col-xs-12" style="margin-bottom: 70px;">
             <div class="row">
-                <a id="facebook"> <img class=" col-xs-4" src="images/Socialmedia/icon-facebook.png"> </a>
-                <img id="instagram" class=" col-xs-4" src="images/Socialmedia/icon-instagram.png">
-                <img id="snapchat" class=" col-xs-4" src="images/Socialmedia/icon-snapchat.png">
+                <a id="facebook"> <img class=" col-xs-4" src="images/Socialmedia/facebook.png"> </a>
+                <img id="instagram" class=" col-xs-4" src="images/Socialmedia/instagram.png">
+                <img id="snapchat" class=" col-xs-4" src="images/Socialmedia/snapchat.png">
             </div>
         </div>
     </div>
@@ -134,19 +121,16 @@
                 </div>
             </div>
         </div>
-    <script src="scripts/modernizr.js"></script>
+    
 
-
+    <div id="toast"><div id="img">Icon</div><div id="desc">Klik på del og tilføj til <br> hjemmeskærm for at få den <br> fulde oplevelse af appen</div></div>
     <!--	Javascript import	-->
+    <script src="lib/modernizr/modernizr.js"></script>
+    <script src="lib/jquery/jquery-3.3.1.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
     <script src="scripts/Index.js">
     </script>
-    <script>
-        if('serviceWorker' in navigator) {
-          navigator.serviceWorker
-                   .register('/sw.js')
-                   .then(function() { console.log("Service Worker Registered"); });
-        }
-        </script>
 </body>
 
 </html>
