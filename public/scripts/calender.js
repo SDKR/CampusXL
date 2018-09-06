@@ -167,7 +167,7 @@ jQuery(document).ready(function ($) {
 		var color = style.getPropertyValue('background-color');
 		console.log(color);
 		$('meta[name=theme-color]').attr('content', color);
-		this.modalBody.find('.event-info').load(event.parent().attr('data-content') + '.html .event-info > *', function (data, err) {
+		this.modalBody.find('.event-info').load("program/"+ event.parent().attr('data-content') + '.html .event-info > *', function (data, err) {
 			//once the event content has been loaded
 			// var element = document.getElementById('image_1'),
 			//  = window.getComputedStyle(element),

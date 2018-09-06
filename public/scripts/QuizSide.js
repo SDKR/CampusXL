@@ -24,7 +24,7 @@ $("#headerImage").click(function() {
 
 var quizType = -1;
 var quizSideData = null;
-$.getJSON("/QuizSideData.json", function(json) {
+$.getJSON("/JSON/QuizSideData.json", function(json) {
     quizSideData = json;
 });
 
