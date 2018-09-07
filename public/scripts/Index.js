@@ -21,7 +21,12 @@ if (isIos() && !isInStandaloneMode()) {
 function launch_toast() {
   var x = document.getElementById("toast")
   x.className = "show";
-  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 14500);
+  var y = document.getElementById("img")
+  y.className = "show";
+  var z = document.getElementById("img2")
+  z.className = "show";
+
+  setTimeout(function(){ x.className = x.className.replace("show", ""); y.className = y.className.replace("show", ""); z.className = z.className.replace("show", "");}, 11500);
 }
 
 var deferredPrompt;
@@ -49,7 +54,7 @@ function showAddToHomeScreen() {
 //Carousel Init
 $(document).ready(function(){
   $('.autoplay').slick({
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
