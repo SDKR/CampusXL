@@ -7,7 +7,7 @@
 
 	<!-- Revmove browser bars in android and IOS  -->
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Campus XL">
 <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
 <meta name="viewport" content="width=device-width, user-scalable=no" />
@@ -48,7 +48,7 @@
 	<!--	Header		-->
 	<header id="topbar">
 	
-		<img id="headerImage" src="images/Logo.png">
+		<img id="headerImage" src="images/icons/Logo.png">
 		
 	</header>
 	
@@ -146,6 +146,40 @@
 							</li>
 						</ul>
 					</li>
+
+					<li class="events-group">
+						<!--<div class="top-info"><span>Program</span></div>-->
+						<div id="Program"></div>
+		
+						<ul>
+							<li class="single-event" data-start="16:00" data-end="17:30" data-content="Kasse5" data-event="event-5">
+								<a href="#0">
+									<em class="event-name">Noget info</em>
+								</a>
+							</li>
+		<!--
+							<li class="single-event" data-start="11:30" data-end="12:15" data-content="Kasse2" data-event="event-2">
+								<a href="#0">
+									<em class="event-name">Kickoff - Ceremoni</em>
+								</a>
+							</li>
+		
+							<li class="single-event" data-start="13:00" data-end="15:00"  data-content="Kasse3" data-event="event-3">
+								<a href="#0">
+									<em class="event-name">Heat 2 for grundskolelever: Karrierelæring</em>
+								</a>
+							</li>
+							<li class="single-event" data-start="15:00" data-end="17:30"  data-content="Kasse4" data-event="event-4">
+									<a href="#0">
+										<em class="event-name">Heat 3 for hele familien</em>
+									</a>
+								</li>-->
+						</ul>
+					</li>
+
+
+
+
 						</ul>
 					</li>
 				</ul>
@@ -178,7 +212,7 @@
 				<div id="footer" class="col-xs-12 navbar-inverse navbar-fixed-bottom">
 				<div class="row" id="bottomNav">
 					<div class="col-xs-2 text-center">
-						<a id="forside" href="index.html">
+						<a id="forside" href="index.html" onclick="return setCookieForIndex('lastPage', (window.location.origin + '/index.html'), 1) ">
 							<i class="glyphicon glyphicon-home"></i>
 							<br>Forside</a>
 					</div>
@@ -205,9 +239,10 @@
 				</div>
 				</div>
 		
-		  	<!--	Javascript import	-->
+			  <!--	Javascript import	-->
+			  <script src="lib/jquery/jquery-3.3.1.js"></script>
+			  <script src="scripts/cookie.js"></script>
 		<script src="lib/modernizr/modernizr.js"></script>
-		<script src="lib/jquery/jquery-3.3.1.js"></script>
 		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
 		<script src="scripts/calender.js"> </script>
 </body>

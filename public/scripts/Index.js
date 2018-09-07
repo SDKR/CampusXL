@@ -14,8 +14,6 @@ var isInStandaloneMode = () => ('standalone' in window.navigator) && (window.nav
 // Checks if should display install popup notification:
 if (isIos() && !isInStandaloneMode()) {
   launch_toast();
-}else{
-  console.log("hej");
 }
 
 function launch_toast() {

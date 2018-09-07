@@ -8,7 +8,7 @@
 
     <!-- Revmove browser bars in android and IOS  -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="Campus XL">
     <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
     <meta name="viewport" content="width=device-width, user-scalable=no" />
@@ -45,7 +45,7 @@
 <body>
     <!--	Header	style="left: -110%;"	-->
     <header >
-        <img id="headerImage" src="images/Logo.png" <!-- burgermenu -->
+        <img id="headerImage" src="images/icons/Logo.png" <!-- burgermenu -->
     </header>
     <div class="indhold">
         
@@ -60,7 +60,7 @@
         <div id="footer" class="col-xs-12 navbar-inverse navbar-fixed-bottom">
             <div class="row" id="bottomNav">
                 <div class="col-xs-2 text-center">
-                    <a id="forside" href="index.html">
+                    <a id="forside" href="index.html" onclick="return setCookieForIndex('lastPage', (window.location.origin + '/index.html'), 1) ">
                         <i class="glyphicon glyphicon-home"></i>
                         <br>Forside</a>
                 </div>
@@ -90,6 +90,7 @@
     
     <!--	Javascript import	-->
     <script src="lib/jquery/jquery-3.3.1.js"></script>
+    <script src="scripts/cookie.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="scripts/QuizSide.js"></script>
 

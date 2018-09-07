@@ -109,7 +109,7 @@ header{
     top: 5px;
     
     box-sizing: border-box;
-	background-image: url("../images/Homescreen.png");
+	background-image: url("../images/Toast/Homescreen.png");
 	background-position: center center;
 	background-size: contain;
     background-repeat: no-repeat;
@@ -127,7 +127,7 @@ header{
     padding-bottom: 16px;
     
     box-sizing: border-box;
-	background-image: url("../images/Add_To_Homescreen_Standard.png");
+	background-image: url("../images/Toast/Add_To_Homescreen_Standard.png");
 	background-position: center center;
 	background-size: contain;
     background-repeat: no-repeat;
@@ -188,39 +188,39 @@ header{
 }
 
 @-webkit-keyframes changeimg {
-    from {transform: rotate(0deg);background-image: url("../images/Homescreen.png");} 
-    to {transform: rotate(180deg);background-image: url("../images/down.png");}
+    from {transform: rotate(0deg);background-image: url("../images/Toast/Homescreen.png");} 
+    to {transform: rotate(180deg);background-image: url("../images/Toast/down.png");}
 }
 
 @keyframes changeimg {
-    from {transform: rotate(0deg);background-image: url("../images/Homescreen.png");} 
-    to {transform: rotate(180deg);background-image: url("../images/down.png");}
+    from {transform: rotate(0deg);background-image: url("../images/Toast/Homescreen.png");} 
+    to {transform: rotate(180deg);background-image: url("../images/Toast/down.png");}
 }
 @-webkit-keyframes changeimg2 {
-    from {background-image: url("../images/Add_To_Homescreen_Standard.png");} 
-    to {background-image: url("../images/Add_To_Homescreen_Clicked.png");}
+    from {background-image: url("../images/Toast/Add_To_Homescreen_Standard.png");} 
+    to {background-image: url("../images/Toast/Add_To_Homescreen_Clicked.png");}
 }
 
 @keyframes changeimg2 {
-    from {background-image: url("../images/Add_To_Homescreen_Standard.png");} 
-    to {background-image: url("../images/Add_To_Homescreen_Clicked.png");}
+    from {background-image: url("../images/Toast/Add_To_Homescreen_Standard.png");} 
+    to {background-image: url("../images/Toast/Add_To_Homescreen_Clicked.png");}
 }
 @-webkit-keyframes changesize {
-    from {height: 60px; width: 60px; background-image: url("../images/Add_To_Homescreen_Standard.png");} 
+    from {height: 60px; width: 60px; background-image: url("../images/Toast/Add_To_Homescreen_Standard.png");} 
     to {width: 70px;
         height: 70px;
         left: 0px;
         top: 70px; 
-        background-image: url("../images/Add_To_Homescreen_Standard.png");}
+        background-image: url("../images/Toast/Add_To_Homescreen_Standard.png");}
 }
 
 @keyframes changesize {
-    from {height: 60px; width: 60px; background-image: url("../images/Add_To_Homescreen_Standard.png");} 
+    from {height: 60px; width: 60px; background-image: url("../images/Toast/Add_To_Homescreen_Standard.png");} 
     to {width: 70px;
         height: 70px;
         left: 0px;
         top: 70px; 
-        background-image: url("../images/Add_To_Homescreen_Standard.png");
+        background-image: url("../images/Toast/Add_To_Homescreen_Standard.png");
     }
 }
 @-webkit-keyframes imgstayybig {
@@ -228,12 +228,12 @@ header{
         height: 70px;
         left: 0px;
         top: 70px; 
-        background-image: url("../images/Add_To_Homescreen_Standard.png");}
+        background-image: url("../images/Toast/Add_To_Homescreen_Standard.png");}
     to {width: 70px;
         height: 70px;
         left: 0px;
         top: 70px; 
-        background-image: url("../images/Add_To_Homescreen_Standard.png");}
+        background-image: url("../images/Toast/Add_To_Homescreen_Standard.png");}
 }
 
 @keyframes imgstayybig {
@@ -241,12 +241,12 @@ header{
         height: 70px;
         left: 0px;
         top: 70px; 
-        background-image: url("../images/Add_To_Homescreen_Standard.png");}
+        background-image: url("../images/Toast/Add_To_Homescreen_Standard.png");}
     to {width: 70px;
         height: 70px;
         left: 0px;
         top: 70px; 
-        background-image: url("../images/Add_To_Homescreen_Standard.png");}
+        background-image: url("../images/Toast/Add_To_Homescreen_Standard.png");}
 }
 
 @-webkit-keyframes expand {
@@ -277,20 +277,20 @@ header{
     to {min-width: 60px}
 }
 @-webkit-keyframes imgstayy {
-    from {min-width: 60px; transform: rotate(180deg); background-image: url("../images/down.png");} 
-    to {min-width: 60px; transform: rotate(180deg); background-image: url("../images/down.png");}
+    from {min-width: 60px; transform: rotate(180deg); background-image: url("../images/Toast/down.png");} 
+    to {min-width: 60px; transform: rotate(180deg); background-image: url("../images/Toast/down.png");}
 }
 @keyframes imgstayy {
-    from {min-width: 60px; transform: rotate(180deg); background-image: url("../images/down.png");}
-    to {min-width: 60px; transform: rotate(180deg); background-image: url("../images/down.png");}
+    from {min-width: 60px; transform: rotate(180deg); background-image: url("../images/Toast/down.png");}
+    to {min-width: 60px; transform: rotate(180deg); background-image: url("../images/Toast/down.png");}
 }
 @keyframes imgstay2 {
-    from {background-image: url("../images/Add_To_Homescreen_Clicked.png");}
-    to {background-image: url("../images/Add_To_Homescreen_Clicked.png");}
+    from {background-image: url("../images/Toast/Add_To_Homescreen_Clicked.png");}
+    to {background-image: url("../images/Toast/Add_To_Homescreen_Clicked.png");}
 }
 @-webkit-keyframes imgstay2 {
-    from {background-image: url("../images/Add_To_Homescreen_Clicked.png");} 
-    to {background-image: url("../images/Add_To_Homescreen_Clicked.png");}
+    from {background-image: url("../images/Toast/Add_To_Homescreen_Clicked.png");} 
+    to {background-image: url("../images/Toast/Add_To_Homescreen_Clicked.png");}
 }
 
 
