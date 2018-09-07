@@ -89,7 +89,7 @@ var array = {
 	produktion: "https://www.pffu.dk/",
 	kombineret: "http://kuunord.dk/",
 	trekløver: "http://xn--treklverskolen-uqb.dk/sp"
-}
+};
 $("table tr td").closest("tr").on("click", function () {
 	window.open(array[$(this).attr("id")], '_blank');
 });

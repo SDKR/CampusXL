@@ -7,7 +7,7 @@ if('serviceWorker' in navigator) {
 var isIos = () => {
   var userAgent = window.navigator.userAgent.toLowerCase();
   return /iphone|ipad|ipod/.test( userAgent );
-}
+};
 // Detects if device is in standalone mode
 var isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
 
@@ -17,11 +17,11 @@ if (isIos() && !isInStandaloneMode()) {
 }
 
 function launch_toast() {
-  var x = document.getElementById("toast")
+  var x = document.getElementById("toast");
   x.className = "show";
-  var y = document.getElementById("img")
+  var y = document.getElementById("img");
   y.className = "show";
-  var z = document.getElementById("img2")
+  var z = document.getElementById("img2");
   z.className = "show";
 
   setTimeout(function(){ x.className = x.className.replace("show", ""); y.className = y.className.replace("show", ""); z.className = z.className.replace("show", "");}, 11500);

@@ -60,7 +60,7 @@ var virksomhedsArray = {
     "bang_nielsen_a/s": 'bang-nielsen.html',
     "attendo_a/s": 'attendo.html',
     "procom_a/s": 'procom.html',
-}
+};
 
 
 
