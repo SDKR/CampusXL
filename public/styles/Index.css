@@ -9,13 +9,32 @@ body{
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"
 }
 
+
+
+
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
+}
+
+
+
+
+
 .indhold{
 	background: #E8E8E8;
 	/* box-shadow: inset 0 5px 5px 0px grey; */
 	height: 100%;
 	width: 100%;
-	margin-top: 10%;
-	padding-top: 10%;
+
 }
 
 .Headline {

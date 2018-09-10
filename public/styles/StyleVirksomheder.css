@@ -88,6 +88,33 @@ body{
 
 }
 
+#linkbar {
+	z-index: 2;
+		-webkit-transform-origin: top center;
+			-ms-transform-origin: top center;
+				transform-origin: top center;
+		position: relative;
+		height: 40px;
+		/* vertically center its content */
+		display: table;
+		width: 100%;
+		background: #f03226;
+	}
+		
+		#linkbar div {
+		position: relative;
+		z-index: 3;
+		color: white;
+		text-align: center;
+		/* vertically center inside its parent */
+		display: table-cell;
+		vertical-align: middle;
+		padding: .6em 5%;
+		}
+		#linkbar:hover, #linkbar:focus,#linkbar:active {
+				background: #f04033;
+			}
+
 
 
 
@@ -184,7 +211,8 @@ body{
 	-webkit-transform-origin: top center;
 		-ms-transform-origin: top center;
 			transform-origin: top center;
-  }
+	}
+	
   
   .cd-schedule .event-modal .close {
 	/* this is the 'X' icon */

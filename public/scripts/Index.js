@@ -4,6 +4,28 @@ if('serviceWorker' in navigator) {
            .then(function() { console.log("Service Worker Registered"); });
 }
 
+$('.image-popup-no-margins').each(function(){
+  $(this).magnificPopup({
+    type: 'image',
+    delegate: 'a', 
+    closeOnContentClick: false,
+    closeBtnInside: false,
+    fixedContentPos: true,
+    mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+    image: {
+      verticalFit: true
+    },
+    zoom: {
+      enabled: true,
+      duration: 300 // don't foget to change the duration also in CSS
+    },
+    gallery: {
+      enabled:true
+    }
+  });
+});
+
+
 var isIos = function() {
   var userAgent = window.navigator.userAgent.toLowerCase();
   return /iphone|ipad|ipod/.test( userAgent );
@@ -52,9 +74,10 @@ function showAddToHomeScreen() {
 //Carousel Init
 $(document).ready(function(){
   $('.autoplay').slick({
+    lazyLoad: 'ondemand',
     slidesToShow: 2,
-    slidesToScroll: 1,
-    autoplay: true,
+    slidesToScroll: 2,
+    autoplay: false,
     autoplaySpeed: 5000,
     adaptiveHeight: false,
     dots: false,
@@ -116,6 +139,8 @@ $("#facebook").click(function() {
       window.open("https://da-dk.facebook.com/Campusfrederikssund/").show();
     }
 });
+
+$(".indhold").css("padding-top", ($("header").outerHeight() + "px"));
 
 $("#headerImage").click(function() {
   var ua = navigator.userAgent;
