@@ -12,7 +12,7 @@ $("#headerImage").click(function() {
         android: ua.match(/Android/)
       };
       if (checker.android){
-        window.open("intent://#Intent;package=com.facebook.katana;scheme=fb://page/118797611557016?referrer=app_link;end");
+        window.location.href="intent://#Intent;package=com.facebook.katana;scheme=fb://page/118797611557016?referrer=app_link;end";
       }
       else if (checker.iphone){
         window.open("fb://profile/118797611557016");
@@ -32,6 +32,10 @@ function showQuiz(){
     //  $(".indhold").css("display", "none");
      $("#buttons").css("display", "none");
     $("header").css("left", "-110%");
+    $("#quiz").css({
+        height: (($(window).height()) - 70)+'px',
+        width: ($(window).width())+'px'
+    });
     $('<iframe style="border: none;" id="Skema" height="'+(($(window).height()) - 70)+'px" width="'+($(window).width())+'px" src="'+quizSideData[quizType]+'"></iframe>')
     .appendTo(".indhold div:nth-of-type(1)");
     $(".indhold div:nth-of-type(1)").css("display", "");
@@ -54,3 +58,7 @@ $("#styling").html("<style id='styling' type='text/css'>#Skema, .smcx-widget.smc
 });
 
 $("<style id='styling' type='text/css'>  .smcx-widget.smcx-embed.smcx-show.smcx-widget-dark{height: "+($(window).height())+"px !important; z-index: 1; width: "+($(window).width())+"px !important;} .indhold div:nth-of-type(2){padding-top: "+($("header").outerHeight())+"px;}  </style>").appendTo("head");
+$(document).ready(function() {
+	//  $(".indhold").css("padding-top", ($("header").outerHeight() + "px"));
+	document.querySelector(".indhold div:nth-of-type(2)").style = "padding-top: " + (document.getElementsByTagName("header")[0].getBoundingClientRect().height + 10) + "px"; 
+	});

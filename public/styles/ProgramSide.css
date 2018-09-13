@@ -23,6 +23,27 @@ body{
 }
 
 
+#topbar.hidde{
+	visibility: hidden;
+	-webkit-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+#topbar{
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+-webkit-transform: translateX(0);
+-ms-transform: translateX(0);
+	transform: translateX(0);
+	visibility: visible;
+-webkit-transition: visibility .6s, -webkit-transform .6s;
+transition: visibility .6s, -webkit-transform .6s;
+transition: transform .6s, visibility .6s;
+transition: transform .6s, visibility .6s, -webkit-transform .6s;
+-webkit-transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+	transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+}
+
 
 
 
@@ -308,10 +329,15 @@ Primary style
   }
   
   .cd-schedule .event-name {
-	font-size: 2.4rem;
+	font-size: 2.2rem;
+	width:100%;
 	}
 	em{
 		font-style: normal;
+	}
+	.cd-schedule h3.event-name{
+		font-size: 2.4rem;
+		width:80%;
 	}
   
   /* @media only screen and (min-width: 800px) {
@@ -331,20 +357,24 @@ Primary style
   .cd-schedule .single-event[data-event="event-1"],
   .cd-schedule [data-event="event-1"] .header-bg {
 	/* this is used to set a background color for the event and the modal window */
-	background: #00aca0;
+	background: #00a0b8;
   }
   
   .cd-schedule .single-event[data-event="event-1"]:hover {
-	background: #00998f;
+	/*background: #00998f;*/
+	text-decoration: none;
+	color:black;
   }
   
   .cd-schedule .single-event[data-event="event-2"],
   .cd-schedule [data-event="event-2"] .header-bg {
-	background: #ffe555
+	background: #ece810;
   }
   
   .cd-schedule .single-event[data-event="event-2"]:hover {
-	background: #f8db37;
+/*	background: #f8db37;*/
+	text-decoration: none;
+	color:black;
   }
   
   .cd-schedule .single-event[data-event="event-3"],
@@ -353,28 +383,35 @@ Primary style
   }
   
   .cd-schedule .single-event[data-event="event-3"]:hover {
-	background: #f82111;
-  }
-  
-  .cd-schedule .single-event[data-event="event-4"],
-  .cd-schedule [data-event="event-4"] .header-bg {
-	background: #fbb80e;
-  }
-  
-  .cd-schedule .single-event[data-event="event-4"]:hover {
-	background: #eca900;
+/*	background: #f82111;*/
+	text-decoration: none;
+	color:black;
 	}
 	
-	.cd-schedule .single-event[data-event="event-5"],
-  .cd-schedule [data-event="event-5"] .header-bg {
-		background: #00aca0;
+	.cd-schedule .single-event[data-event="event-4"],
+  .cd-schedule [data-event="event-4"] .header-bg {
+		background: #fbb80e;
 	/*background: #004e5d;*/
   }
   
-  .cd-schedule .single-event[data-event="event-5"]:hover {
+  .cd-schedule .single-event[data-event="event-4"]:hover {
 	/*background: #003641;*/
-	background: #00998f;
+/*	background: #00998f;*/
+	text-decoration: none;
+	color:black;
   }
+  
+  .cd-schedule .single-event[data-event="event-5"],
+  .cd-schedule [data-event="event-5"] .header-bg {
+	background: #06aea0;
+  }
+  
+  .cd-schedule .single-event[data-event="event-5"]:hover {
+/*	background: #eca900;*/
+	text-decoration: none;
+	color:black;
+	}
+	
   
   .cd-schedule .event-modal {
 	position: fixed;
@@ -390,10 +427,10 @@ Primary style
 	-webkit-transform: translateX(100%);
 		-ms-transform: translateX(100%);
 			transform: translateX(100%);
-	-webkit-transition: visibility .4s, -webkit-transform .4s;
-	transition: visibility .4s, -webkit-transform .4s;
-	transition: transform .4s, visibility .4s;
-	transition: transform .4s, visibility .4s, -webkit-transform .4s;
+	-webkit-transition: visibility .6s, -webkit-transform .6s;
+	transition: visibility .6s, -webkit-transform .6s;
+	transition: transform .6s, visibility .6s;
+	transition: transform .6s, visibility .6s, -webkit-transform .6s;
 	-webkit-transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
 			transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
   }
@@ -423,10 +460,12 @@ Primary style
   }
   
   .cd-schedule .event-modal .event-info {
+	background-image: url("../images/Paper.jpg");
 	position: relative;
 	z-index: 2;
 	line-height: 1.4;
 	height: 100%;
+	width: 100%;
 	overflow: hidden;
   }
   
@@ -634,8 +673,8 @@ Primary style
 	background: rgba(0, 0, 0, 0.8);
 	opacity: 0;
 	visibility: hidden;
-	-webkit-transition: opacity .4s, visibility .4s;
-	transition: opacity .4s, visibility .4s;
+	-webkit-transition: opacity .4s, visibility .6s;
+	transition: opacity .4s, visibility .6s;
   }
   
   .cd-schedule.modal-is-open .cover-layer {

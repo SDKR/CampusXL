@@ -19,7 +19,7 @@ $("#headerImage").click(function() {
 		android: ua.match(/Android/)
 	  };
 	  if (checker.android){
-		window.open("intent://#Intent;package=com.facebook.katana;scheme=fb://page/118797611557016?referrer=app_link;end");
+		window.location.href="intent://#Intent;package=com.facebook.katana;scheme=fb://page/118797611557016?referrer=app_link;end";
 	  }
 	  else if (checker.iphone){
 		window.open("fb://profile/118797611557016");
@@ -146,13 +146,15 @@ jQuery(document).ready(function ($) {
 		var mq = self.mq();
 		this.animating = true;
 		if ($(window).width() < 800)
-			$("#topbar").animate({
-				left: '-100%'
-			});
+		$("#topbar").addClass("hidde");
+			// $("#topbar").animate({
+			// 	left: '-100%'
+			// });
 		else
-			$("#topbar").animate({
-				top: '-50%'
-			});
+		$("#topbar").addClass("hidde");
+			// $("#topbar").animate({
+			// 	top: '-50%'
+			// });
 
 
 		//update event name and time
@@ -170,7 +172,7 @@ jQuery(document).ready(function ($) {
 			// var element = document.getElementById('image_1'),
 			//  = window.getComputedStyle(element),
 			// top = style.getPropertyValue('top');
-
+			$(".cd-schedule .event-modal .event-info").css("height", (window.innerHeight - $(".header").outerHeight() - 70) + "px");
 			if (err == "success") modalbody.html("<div>" + data + "</div>");
 			else modalbody.html("<div>Der er sket en fejl</div>");
 			self.element.addClass('content-loaded');
@@ -256,16 +258,18 @@ jQuery(document).ready(function ($) {
 	SchedulePlan.prototype.closeModal = function (event) {
 		var self = this;
 		var mq = self.mq();
-		$('meta[name=theme-color]').attr('content', "#0B9BE2");
+		$('meta[name=theme-color]').attr('content', "#ffffff");
 		this.animating = true;
 		if ($(window).width() < 800)
-			$("#topbar").animate({
-				left: '0%'
-			});
+		$("#topbar").removeClass("hidde");
+			// $("#topbar").animate({
+			// 	left: '0%'
+			// },950);
 		else
-			$("#topbar").animate({
-				top: '0%'
-			});
+		$("#topbar").removeClass("hidde");
+			// $("#topbar").animate({
+			// 	top: '0%'
+			// },950);
 
 		if (mq == 'mobile') {
 			this.element.removeClass('modal-is-open');

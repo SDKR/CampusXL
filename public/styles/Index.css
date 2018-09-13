@@ -61,19 +61,19 @@ body{
     text-decoration: none;
     text-transform: uppercase;
     padding: 30px 45px;
-    background-color: #f03226;
+    background-color: #004e5d;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	display: flex; 
 	justify-content: center;
-	margin-bottom: 40px;
+    margin-bottom: 40px;
+    border: solid 3px white;
+    /*border-radius: 15px;*/
 }
 .shiny-btn:active {
-    transform: scale(1);
     background-position: 500px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .shiny-btn:hover {
-	transform: scale(1.1);
 	text-decoration: none;
 	color:white;
     background-position: -60px;

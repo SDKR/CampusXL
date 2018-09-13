@@ -77,8 +77,8 @@ $(document).ready(function(){
     lazyLoad: 'ondemand',
     slidesToShow: 2,
     slidesToScroll: 2,
-    autoplay: false,
-    autoplaySpeed: 5000,
+    autoplay: true,
+    autoplaySpeed: 3500,
     adaptiveHeight: false,
     dots: false,
     prevArrow: false,
@@ -96,7 +96,7 @@ $("#instagram").click(function() {
         android: ua.match(/Android/)
       };
       if (checker.android){
-        window.open("intent://instagram.com/_u/campusxl_18/#Intent;package=com.instagram.android;scheme=https;end");
+        window.location.href="intent://instagram.com/_u/campusxl_18/#Intent;package=com.instagram.android;scheme=https;end";
       }
       else if (checker.iphone){
         window.open("instagram://user?username=campusxl_18");
@@ -113,7 +113,7 @@ $("#snapchat").click(function() {
       android: ua.match(/Android/)
     };
     if (checker.android){
-      window.open("snapchat://add/campusxl_18");
+      window.location.href="snapchat://add/campusxl_18";
     }
     else if (checker.iphone){
       window.open("snapchat://add/campusxl_18");
@@ -130,7 +130,7 @@ $("#facebook").click(function() {
       android: ua.match(/Android/)
     };
     if (checker.android){
-      window.open("intent://#Intent;package=com.facebook.katana;scheme=fb://page/118797611557016?referrer=app_link;end");
+      window.location.href="intent://#Intent;package=com.facebook.katana;scheme=fb://page/118797611557016?referrer=app_link;end";
     }
     else if (checker.iphone){
       window.open("fb://profile/118797611557016");
@@ -140,7 +140,10 @@ $("#facebook").click(function() {
     }
 });
 
-$(".indhold").css("padding-top", ($("header").outerHeight() + "px"));
+$(document).ready(function() {
+  //  $(".indhold").css("padding-top", ($("header").outerHeight() + "px"));
+  document.getElementsByClassName("indhold")[0].style = "padding-top: " + document.getElementsByTagName("header")[0].getBoundingClientRect().height + "px"; 
+  });
 
 $("#headerImage").click(function() {
   var ua = navigator.userAgent;
@@ -149,7 +152,7 @@ $("#headerImage").click(function() {
       android: ua.match(/Android/)
     };
     if (checker.android){
-      window.open("intent://#Intent;package=com.facebook.katana;scheme=fb://page/118797611557016?referrer=app_link;end");
+      window.location.href="intent://#Intent;package=com.facebook.katana;scheme=fb://page/118797611557016?referrer=app_link;end";
     }
     else if (checker.iphone){
       window.open("fb://profile/118797611557016");

@@ -45,7 +45,7 @@ body{
 	background-color: #00a0b8;
 }
 #gym{
-	background-color: #fff22b;
+	background-color: #ece810;
 }
 #erhverv{
 	background-color: #f03226;
@@ -56,7 +56,7 @@ body{
 
 
 .shiny-btn-small:active, .shiny-btn-small:focus, .shiny-btn-small:hover{
-	color: white;
+	color: black;
 	outline: none;
 	text-decoration:none; 
 	cursor:pointer;  
@@ -162,15 +162,13 @@ body{
 
 .readMore{
 	position: absolute;
-	/* bottom: 26%; */
 	top: 1.8%;
-    left: 2%;
-	/* background: #e74c3c; */
+  left: 2%;
 	background: #f03226;
-    padding: 5px 10px;
-    color: #FFFFFF;
-    font-size: 13px;
-    font-weight: 600;
+  padding: 5px 10px;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 600;
 	/* border-bottom-right-radius: 10px;  */
 }
 

@@ -12,7 +12,7 @@ cmd.run('uglifyjs '+path.resolve(__dirname+'/public/scripts/UddannelseSide.js')+
 cmd.run('uglifyjs '+path.resolve(__dirname+'/public/scripts/Virksomhedsside.js')+ " -o "+ path.resolve(__dirname +'/public-minified/scripts/Virksomhedsside.js'));
 cmd.run('uglifyjs '+path.resolve(__dirname+'/public/sw.js')+ " -o "+ path.resolve(__dirname +'/public-minified/sw.js'));
 
-console.log('uglifyjs '+path.resolve(__dirname+'/public/scripts/Index.js')+ " -o "+ path.resolve(__dirname +'/public-minified/scripts/Index.js'));
+console.log('html-minifier '+path.resolve(__dirname+'/public/QuizSide.html') + htmlPreset + " -o "+path.resolve(__dirname +'/public-minified/QuizSide.html'));
 
 //Styles
 cmd.run('postcss '+path.resolve(__dirname+'/public/styles/404.css')+' > '+path.resolve(__dirname +'/public-minified/styles/404.css'));

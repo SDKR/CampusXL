@@ -1,17 +1,58 @@
-<b><h4>Masser af aktiviteter for hele familien</h4></b>
+<h4><b>Campusaktiviteter på hele området</b></h4>
+
 <br>
-<strong>&#8226;</strong> Mad fra grillen og kolde drikke til alle
-<br>
-<strong>&#8226;</strong> Deltag i konkurrencer 
-<br>
-<strong>&#8226;</strong> Bliv klogere på det fremtidige uddannelsesvalg
-<br>
-<strong>&#8226;</strong> Støt op om dit barns karrierelæring!
-<br><br>
-<b><h4>For de yngre søskende:</h4></b>
-<br>
-<strong>&#8226;</strong> Lær’ nye kunster og mød mini-dyr i Cirkus Bella Donna
-<br>
-<strong>&#8226;</strong> Prøv sjove og udfordrende forhindringsbaner 
-<br>
-<strong>&#8226;</strong> Tag en goodiebag med fredagsslik med hjem (fra kl. 17)
+
+<div style="display: flex; float: left; width: 50%; height: 296px;">
+    <ul>
+        <li>Billedkunst</li>
+        <li>Brydning</li>
+        <li>Miljø + Studiemiljø</li>
+        <li>Golf</li>
+        <li>Badminton</li>
+        <li>Fodbold</li>
+        <li>Lystfiskeri</li>
+        <li>Knæk Cancer sponsorløb</li>
+        <li>Vikingeaktiviteter</li>
+        <li>Ultimate Frisbee</li>
+        <li>Yoga</li>
+    </ul>
+</div>
+
+<div style="display: flex; float: left; width: 50%; height: 296px;">
+    <ul>
+        <li>Dykning</li>
+        <li>Poker</li>
+        <li>Bio</li>
+        <li>Volleyball</li>
+        <li>Kung Fu</li>
+        <li>Livet som soldat</li>
+        <li>Street Basket</li>
+        <li>Trivial Pursuit</li>
+        <li>Museumstur</li>
+        <li>Zumba</li>
+        <li>LGBT</li>
+    </ul>
+</div>
+<br><br><br>
+<a id="facebook" style="color:#ff0000; text-align: center; display: block;">Læs hvor og hvornår hér</a>
+
+<script>
+
+    $("#facebook").click(function() {
+  var ua = navigator.userAgent;
+  var checker = {
+      iphone: ua.match(/(iPhone|iPod|iPad)/),
+      android: ua.match(/Android/)
+    };
+    if (checker.android){
+      window.open("intent://www.facebook.com/pg/Campusfrederikssund/photos/#Intent;package=com.facebook.katana;scheme=https;end?type=3&theater");
+    }
+    else if (checker.iphone){
+      window.open("fb://page/?referrer=app_link&type=3&theater");
+    }
+    else {
+      window.open("https://www.facebook.com/Campusfrederikssund/photos/pcb.1675056112597817/1675055335931228/?type=3&theater").show();
+    }
+});
+
+</script>
